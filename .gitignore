@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+*.key
+*.pem
+id_ed25519*
+*.conf
+*.ovpn
+*.mobileconfig
+*.log
+.DS_Store
+private/
+secrets/
+
+*.py[cod]
+!.env.example

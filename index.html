@@ -1,0 +1,2659 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="在中国海外网络稳定使用保姆级教程：12类网络模式、36章实操、30天使用策略、故障排查、主备演练、隐私和安全。">
+<title>在中国海外网络稳定使用保姆级教程 · AI 酋长 Andy</title>
+<style>
+:root{--bg:#f7f8fa;--surface:#fff;--ink:#161a20;--muted:#606a7b;--line:#e7ebf0;--accent:#2563eb;--pale:#eff5ff;--shadow:0 24px 65px rgba(20,34,56,.045)}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1116;--surface:#151a21;--ink:#e8edf6;--muted:#a1acbd;--line:#2b3543;--accent:#8ab4ff;--pale:#1b2c43;--shadow:none}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:15px/1.85 -apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:var(--bg);color:var(--ink)}a{color:var(--accent);text-underline-offset:3px}button,input{font:inherit}header{padding:68px max(24px,calc((100vw - 1180px)/2));background:var(--surface);border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;letter-spacing:.15em;font-weight:760;color:var(--accent)}.hero h1{font-size:clamp(34px,5.5vw,66px);line-height:1.16;letter-spacing:-.06em;margin:20px 0 18px;max-width:890px}.hero p{font-size:17px;color:var(--muted);margin:0;max-width:760px}.pillset{display:flex;gap:8px;flex-wrap:wrap;margin-top:27px}.pill{border:1px solid var(--line);border-radius:50px;padding:4px 13px;font-size:12px;color:var(--muted)}.shell{max-width:1290px;margin:auto;display:grid;grid-template-columns:270px minmax(0,1fr);gap:36px;padding:35px 24px 80px}.sidebar{position:sticky;top:20px;align-self:start;max-height:calc(100vh - 40px);overflow:auto;padding:12px 0;scrollbar-width:thin}.sidetitle{color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.14em;padding:9px 14px}.search{width:calc(100% - 24px);margin:0 12px 15px;border:1px solid var(--line);border-radius:13px;background:var(--surface);color:var(--ink);padding:10px 12px;outline:none}.search:focus{border-color:var(--accent)}.navlink{display:flex;gap:9px;text-decoration:none;color:var(--muted);line-height:1.38;font-size:12px;border-radius:9px;margin:2px 6px;padding:10px 9px}.navlink:hover,.navlink.active{background:var(--pale);color:var(--accent)}.navnum{font-size:10px;font-weight:700;min-width:18px;color:var(--accent)}main{min-width:0}.chapter{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:42px clamp(18px,4vw,62px);margin-bottom:28px;box-shadow:var(--shadow);scroll-margin-top:20px;overflow-wrap:anywhere}.chapter-index{font:700 11px/1.2 system-ui;letter-spacing:.16em;color:var(--accent)}.chapter h1{font-size:clamp(26px,3.4vw,37px);line-height:1.35;letter-spacing:-.045em;margin:16px 0 24px}.chapter h2{font-size:21px;line-height:1.4;letter-spacing:-.03em;margin:38px 0 12px}.chapter h3{font-size:17px;margin:24px 0 8px}.chapter p{margin:12px 0}.chapter blockquote{margin:20px 0;padding:12px 20px;border-left:3px solid var(--accent);background:var(--pale);border-radius:0 10px 10px 0}.chapter table{width:100%;border-collapse:collapse;display:block;overflow-x:auto;font-size:13px;margin:16px 0}.chapter th,.chapter td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left;min-width:90px;vertical-align:top}.chapter th{background:var(--pale)}.chapter pre{background:var(--bg);border:1px solid var(--line);padding:17px;overflow:auto;border-radius:10px;font-size:12px;line-height:1.6}.chapter code{font:12px ui-monospace,SFMono-Regular,Consolas,monospace;word-break:break-word;background:var(--pale);border-radius:4px;padding:2px 5px}.chapter pre code{background:none;padding:0;word-break:normal}.chapter li{margin:7px 0}.chapter strong{font-weight:750}.chapter ol,.chapter ul{padding-left:22px}.off{display:none!important}.site-nav{display:flex;flex-wrap:wrap;gap:20px;padding:16px max(24px,calc((100vw - 1180px)/2));background:var(--surface);border-bottom:1px solid var(--line)}.site-nav a{font-size:13px;text-decoration:none}.end{text-align:center;padding:20px;color:var(--muted);font-size:12px}.top{position:fixed;right:22px;bottom:22px;padding:9px 15px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:99px;box-shadow:var(--shadow);cursor:pointer}#status{color:var(--muted);font-size:12px;padding:0 12px}#progress{height:3px;background:var(--accent);position:fixed;top:0;left:0;width:0;z-index:20;transition:width .1s}
+@media(max-width:850px){header{padding:48px 22px}.shell{display:block;padding:15px 12px 65px}.sidebar{position:relative;top:auto;max-height:none;padding:12px 0 22px}.navs{display:flex;overflow-x:auto;scrollbar-width:thin;white-space:nowrap}.navlink{flex:0 0 auto;max-width:240px}.navlink span:last-child{overflow:hidden;text-overflow:ellipsis}.chapter{padding:24px 20px;margin-bottom:12px;border-radius:12px}.top{bottom:14px;right:14px}}
+@media print{header{padding:20px}.sidebar,#progress,.top{display:none}.shell{display:block;padding:0}.chapter{box-shadow:none;break-before:page;border:0;padding:10px}}
+</style></head><body><div id="progress"></div><nav class="site-nav" aria-label="主导航"><a href="#chapter-00">开始阅读</a><a href="https://github.com/AIPMAndy/china-overseas-network-guide" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网 ↗</a></nav><header class="hero"><div class="eyebrow">OPEN-SOURCE FIELD GUIDE / VERSION 3.0</div><h1>在中国海外网络稳定使用<br>保姆级教程</h1><p>覆盖商业 VPN、代理订阅、自建 VPS、国际漫游、企业专线、私有组网、Tor 等 12 类模式；从零基础配置，到分设备使用、真实业务验收、30天执行、主备演练、安全和应急回滚。无永久稳定承诺。</p><div class="pillset"><span class="pill">AI 酋长 Andy</span><span class="pill">免费开源</span><span class="pill">36 篇实操章节</span><span class="pill">2026-10-12 核对</span></div></header>
+<div class="shell"><aside class="sidebar"><div class="sidetitle">CHAPTERS / 目录</div><input id="search" class="search" type="search" placeholder="搜索内容，例如 DNS、iPhone、密钥" aria-label="搜索教程"><div id="status"></div><nav class="navs"><a class="navlink" href="#chapter-00"><span class="navnum">00</span><span>在中国海外网络稳定使用保姆级教程</span></a>
+<a class="navlink" href="#chapter-01"><span class="navnum">01</span><span>00｜先读：法律边界、真实需求与威胁模型</span></a>
+<a class="navlink" href="#chapter-02"><span class="navnum">02</span><span>01｜先选方案：不要先买一年套餐</span></a>
+<a class="navlink" href="#chapter-03"><span class="navnum">03</span><span>02｜Outline：用官方 Manager 自建，按步骤验收</span></a>
+<a class="navlink" href="#chapter-04"><span class="navnum">04</span><span>03｜AmneziaVPN：不用背命令，也能理解自建流程</span></a>
+<a class="navlink" href="#chapter-05"><span class="navnum">05</span><span>04｜电脑端：Mac、Windows、Linux 从安装到验收</span></a>
+<a class="navlink" href="#chapter-06"><span class="navnum">06</span><span>05｜手机与平板：iPhone、iPad、Android</span></a>
+<a class="navlink" href="#chapter-07"><span class="navnum">07</span><span>06｜稳定性：别看测速截图，先定义指标</span></a>
+<a class="navlink" href="#chapter-08"><span class="navnum">08</span><span>07｜排障树：网络坏了，按这个顺序查</span></a>
+<a class="navlink" href="#chapter-09"><span class="navnum">09</span><span>08｜隐私和安全：比“IP 看起来像外国”更重要</span></a>
+<a class="navlink" href="#chapter-10"><span class="navnum">10</span><span>09｜花多少钱：小心“首月便宜，次月昂贵”</span></a>
+<a class="navlink" href="#chapter-11"><span class="navnum">11</span><span>10｜七天验收：把“稳定”变成可验证的证据</span></a>
+<a class="navlink" href="#chapter-12"><span class="navnum">12</span><span>11｜技术原理：用大白话解释为什么会出问题</span></a>
+<a class="navlink" href="#chapter-13"><span class="navnum">13</span><span>12｜进阶：理解 Clash Verge Rev、sing-box、规则与 TUN</span></a>
+<a class="navlink" href="#chapter-14"><span class="navnum">14</span><span>13｜做业务的人：网络连接与商业账号必须分开管理</span></a>
+<a class="navlink" href="#chapter-15"><span class="navnum">15</span><span>14｜12 种海外网络接入模式：先看全景，再动手</span></a>
+<a class="navlink" href="#chapter-16"><span class="navnum">16</span><span>15｜商业 VPN 与“机场订阅”：挑选、导入、试用、退出</span></a>
+<a class="navlink" href="#chapter-17"><span class="navnum">17</span><span>16｜VLESS/REALITY、Hysteria 2、Trojan、Shadowsocks：怎么选</span></a>
+<a class="navlink" href="#chapter-18"><span class="navnum">18</span><span>17｜境外 SIM、eSIM、国际漫游：有时不用安装 VPN</span></a>
+<a class="navlink" href="#chapter-19"><span class="navnum">19</span><span>18｜企业跨境办公：专线、SD-WAN、SASE 与远程桌面</span></a>
+<a class="navlink" href="#chapter-20"><span class="navnum">20</span><span>19｜Tailscale、WireGuard、ZeroTier、海外家庭出口与云工作站</span></a>
+<a class="navlink" href="#chapter-21"><span class="navnum">21</span><span>20｜Tor、WARP、Smart DNS、指纹浏览器：哪些能解决，哪些不能</span></a>
+<a class="navlink" href="#chapter-22"><span class="navnum">22</span><span>21｜五分钟场景化排障：按现象定位，不盲目换节点</span></a>
+<a class="navlink" href="#chapter-23"><span class="navnum">23</span><span>22｜7 天稳定性 SLO：从“能用”变成工程验收</span></a>
+<a class="navlink" href="#chapter-24"><span class="navnum">24</span><span>23｜对抗式审核：新手、工程师、安全官、事实核验员四方挑战</span></a>
+<a class="navlink" href="#chapter-25"><span class="navnum">25</span><span>24｜30 分钟启动：第一次正确使用，到每天稳定工作</span></a>
+<a class="navlink" href="#chapter-26"><span class="navnum">26</span><span>25｜六种使用画像：把“默认设置”变成可复用策略</span></a>
+<a class="navlink" href="#chapter-27"><span class="navnum">27</span><span>26｜开发者实战：Mac、Windows、终端、IDE 与 Docker</span></a>
+<a class="navlink" href="#chapter-28"><span class="navnum">28</span><span>27｜移动端全场景：iPhone / iPad / Android / 热点 / 漫游</span></a>
+<a class="navlink" href="#chapter-29"><span class="navnum">29</span><span>28｜主备策略工程化：一条线路失效，工作继续</span></a>
+<a class="navlink" href="#chapter-30"><span class="navnum">30</span><span>29｜网络路由策略：分流、DNS、IPv6、TUN 与本地设备</span></a>
+<a class="navlink" href="#chapter-31"><span class="navnum">31</span><span>30｜怎么买最划算：试用、供应商风险、成本模型与退出策略</span></a>
+<a class="navlink" href="#chapter-32"><span class="navnum">32</span><span>31｜安全分层：重要账号、AI 服务、支付和客户数据</span></a>
+<a class="navlink" href="#chapter-33"><span class="navnum">33</span><span>32｜稳定性不是感觉：监控面板、SLO、变更管理与月度复盘</span></a>
+<a class="navlink" href="#chapter-34"><span class="navnum">34</span><span>33｜10 个可复现故障剧本：看到现象，就照表处理</span></a>
+<a class="navlink" href="#chapter-35"><span class="navnum">35</span><span>34｜从零到长期稳定：30 天执行、验收与退出路线</span></a>
+<a class="navlink" href="#chapter-36"><span class="navnum">36</span><span>35｜反直觉事实与误区：稳定、速度、隐私、账号、合规</span></a></nav></aside><main id="content"><section class="chapter" id="chapter-00" data-search="在中国海外网络稳定使用保姆级教程"><div class="chapter-index">00 / 36</div><h1>在中国海外网络稳定使用保姆级教程</h1>
+<blockquote>
+<p>一个普通人也能照着做的海外网络接入工程手册：<strong>12 类网络模式、36 篇教程、6 种场景策略、主备故障演练、7 天实测与 30 天执行计划</strong>。</p>
+<p>版本：<strong>v3.0 · 2026-10-12</strong> ｜ 作者：<strong>AI 酋长 Andy</strong> ｜ <a href="https://aipmandy.github.io/china-overseas-network-guide/">在线阅读</a> ｜ <a href="#chapter-00">离线网页阅读</a> ｜ <a href="#chapter-15">方案总览</a> ｜ <a href="AUDIT.md">对抗式审核</a></p>
+</blockquote>
+<h2>先说结论</h2>
+<p><strong>没有一种方法可以保证中国大陆所有地区、设备、运营商、时段、海外服务都稳定可用。</strong> 能持续工作的系统依赖可验证的连接质量、适当合规路径、备份与回滚能力。选择方法要先匹配目标、设备和安全边界。</p>
+<p>中国大陆对跨境联网、国际专线及相关经营活动存在监管要求。此项目用于帮助读者理解技术与风险、开展获得授权的网络管理；<strong>不提供节点、订阅账号、盗版软件、跨境网络经营服务或“合法性保证”</strong>。企业跨境传输、商业经营和敏感数据请按适用规定审核。阅读 <a href="#chapter-01">法规与边界</a> 与 <a href="#chapter-19">企业接入</a>。</p>
+<h2>你现在是什么情况？直接从这里开始</h2>
+<table>
+<thead>
+<tr>
+  <th>情况</th>
+  <th>第一站</th>
+  <th>做完会得到什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>完全零基础，听说 VPN、机场、VPS、eSIM</td>
+  <td><a href="#chapter-15">12 种模式总览</a> → <a href="#chapter-02">选择方案</a></td>
+  <td>一份 <a href="templates/%E6%96%B9%E6%A1%88%E5%8F%96%E8%88%8D%E5%8D%A1.md">方案取舍卡</a></td>
+</tr>
+<tr>
+  <td>不想管理服务器，打算购买商业服务</td>
+  <td><a href="#chapter-16">商业 VPN 与订阅</a></td>
+  <td>试用验收方法和退出门槛</td>
+</tr>
+<tr>
+  <td>已有空白 VPS，想学习自建</td>
+  <td><a href="#chapter-03">Outline</a> / <a href="#chapter-04">Amnezia</a> → <a href="#chapter-17">进阶协议</a></td>
+  <td>自建授权与验收卡</td>
+</tr>
+<tr>
+  <td>iPhone/Android、eSIM 与漫游</td>
+  <td><a href="#chapter-06">移动端</a> → <a href="#chapter-18">漫游专章</a></td>
+  <td>设备和运营商适配记录</td>
+</tr>
+<tr>
+  <td>Mac/Windows/Linux、规则和 TUN</td>
+  <td><a href="#chapter-05">电脑端</a> → <a href="#chapter-13">分流进阶</a></td>
+  <td>可回退的设备配置</td>
+</tr>
+<tr>
+  <td>想用海外家用电脑、Tailscale、远程桌面</td>
+  <td><a href="#chapter-20">组网与远程工作站</a></td>
+  <td>授权设备拓扑与出口验证</td>
+</tr>
+<tr>
+  <td>想了解 Tor、WARP、DNS、指纹浏览器</td>
+  <td><a href="#chapter-21">技术边界</a></td>
+  <td>知道工具能做与不能做</td>
+</tr>
+<tr>
+  <td>做公司业务、远程研发或跨国协作</td>
+  <td><a href="#chapter-19">企业跨境接入</a></td>
+  <td>IT/合规采购需求表</td>
+</tr>
+<tr>
+  <td>能连接但经常超时、晚高峰不好用</td>
+  <td><a href="#chapter-22">五分钟故障树</a> → <a href="#chapter-08">经典排障</a></td>
+  <td>故障记录与回滚</td>
+</tr>
+<tr>
+  <td>想用数据判断是否真的稳定</td>
+  <td><a href="#chapter-23">7 天 SLO</a> / <a href="#chapter-07">测量方法</a></td>
+  <td>42 个观测点 + 主备演练</td>
+</tr>
+</tbody>
+</table>
+<h2>12 种技术路线：按用途和责任分类</h2>
+<table>
+<thead>
+<tr>
+  <th>类别</th>
+  <th>包含</th>
+  <th>实际风险重点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>企业合规接入</td>
+  <td>专线、SD-WAN、SASE/ZTNA</td>
+  <td>法规/合同、数据流、SLA</td>
+</tr>
+<tr>
+  <td>商业接入</td>
+  <td>商业 VPN App、代理订阅（机场）</td>
+  <td>信任第三方、配置泄漏、服务持续性</td>
+</tr>
+<tr>
+  <td>自建服务器</td>
+  <td>Outline/SS、AmneziaWG、Xray/REALITY、Hysteria 2/TUIC</td>
+  <td>运维、协议兼容、服务器安全、线路失效</td>
+</tr>
+<tr>
+  <td>标准 VPN/私有组网</td>
+  <td>WireGuard、OpenVPN、IKEv2、Tailscale、ZeroTier</td>
+  <td>仅能解决授权场景、不能保证穿透限制</td>
+</tr>
+<tr>
+  <td>移动网络</td>
+  <td>境外 SIM/eSIM/数据漫游</td>
+  <td>机型、漫游出口、套餐与实际可用性</td>
+</tr>
+<tr>
+  <td>远端使用</td>
+  <td>海外云电脑/远程桌面、Tor 网桥浏览</td>
+  <td>不覆盖全部本机 APP、隐私和访问限制</td>
+</tr>
+</tbody>
+</table>
+<p><strong>选择时请看五层：目标应用 → 接入网络 → 协议 → 真实出口 → 客户端路由。</strong> 客户端本身不会凭空提供服务；看见国外 IP 也不等于符合某平台的国家资格。</p>
+<h2>v3.0 新增：从「连得上」到「长期能工作」</h2>
+<p><strong>推荐的执行顺序：</strong> <a href="#chapter-25">30 分钟启动</a> → <a href="#chapter-26">选使用画像</a> → <a href="#chapter-30">设定路由与 DNS</a> → <a href="#chapter-29">做好真实独立备用</a> → <a href="#chapter-33">用任务度量</a> → <a href="#chapter-35">30 天固化</a>。</p>
+<h3>五类人应该先看哪一章？</h3>
+<table>
+<thead>
+<tr>
+  <th>读者</th>
+  <th>首选章节</th>
+  <th>成功标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>完全不会操作的个人用户</td>
+  <td><a href="#chapter-25">24</a> + <a href="#chapter-26">25</a></td>
+  <td>三项任务、两类接入能验收，故障能退回原网络</td>
+</tr>
+<tr>
+  <td>Mac/Windows AI 开发者</td>
+  <td><a href="#chapter-27">26</a> + <a href="#chapter-30">29</a></td>
+  <td>浏览器、终端、IDE、容器分别能工作</td>
+</tr>
+<tr>
+  <td>iPhone/iPad/Android 重度用户</td>
+  <td><a href="#chapter-28">27</a></td>
+  <td>Wi-Fi、蜂窝、热点客户机独立验证</td>
+</tr>
+<tr>
+  <td>内容创作者/自由职业</td>
+  <td><a href="#chapter-29">28</a> + <a href="#chapter-31">30</a></td>
+  <td>上传/会议可用，有独立备用，了解真实总成本</td>
+</tr>
+<tr>
+  <td>小团队/企业跨境协作</td>
+  <td><a href="#chapter-19">18</a> + <a href="#chapter-32">31</a> + <a href="#chapter-33">32</a></td>
+  <td>接入经审批、可回滚、保护客户数据、故障有责任人</td>
+</tr>
+</tbody>
+</table>
+<h3>按场景选择「使用配置」</h3>
+<ul>
+<li><strong>低频上网</strong>：按需开启，最少权限，故障时恢复普通网络。</li>
+<li><strong>网页+开发工具</strong>：逐个验证浏览器、CLI、IDE、Docker；先解决目标应用再扩大路由范围。</li>
+<li><strong>手机/iPad 移动办公</strong>：Wi-Fi、蜂窝、设备切换和热点分开验收。</li>
+<li><strong>重要业务操作</strong>：登录、支付、客户资料与公开资料分层；账号异常时优先官方恢复。</li>
+<li><strong>连续生产</strong>：独立上游+独立接入介质+离线缓冲，故障时先恢复业务再分析。</li>
+<li><strong>企业生产与敏感数据</strong>：仅通过公司授权、受管理、可审计的网络路径，不以私人接入替代。</li>
+</ul>
+<h3>新增的实用产物</h3>
+<p><a href="templates/%E7%BD%91%E7%BB%9C%E4%BD%BF%E7%94%A8%E7%AD%96%E7%95%A5%E5%8D%A1.md">网络使用策略卡</a> · <a href="templates/%E4%B8%9A%E5%8A%A1%E7%BD%91%E7%BB%9C%E5%88%86%E5%B1%82%E8%A1%A8.md">业务网络分层表</a> · <a href="templates/%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81%E9%AA%8C%E6%94%B6%E8%A1%A8.md">开发工作流验收表</a> · <a href="templates/%E4%B8%BB%E5%A4%87%E6%95%85%E9%9A%9C%E7%9F%A9%E9%98%B5.md">主备故障矩阵</a> · <a href="templates/%E8%B7%AF%E7%94%B1%E5%86%B3%E7%AD%96%E4%B8%8E%E9%AA%8C%E8%AF%81%E8%A1%A8.md">路由决策与验证表</a> · <a href="templates/%E8%B4%A6%E5%8F%B7%E4%B8%8E%E6%95%8F%E6%84%9F%E4%BB%BB%E5%8A%A1%E9%9A%94%E7%A6%BB%E5%8D%A1.md">账号与敏感任务隔离卡</a> · <a href="templates/%E7%BD%91%E7%BB%9C%E6%9C%88%E5%BA%A6%E5%A4%8D%E7%9B%98.md">网络月度复盘</a> · <a href="templates/%E6%9C%88%E5%BA%A6%E6%88%90%E6%9C%AC%E6%A0%B8%E7%AE%97%E8%A1%A8.csv">月度成本核算表</a>。</p>
+<h2>全部 36 章实操教程</h2>
+<table>
+<thead>
+<tr>
+  <th>章节</th>
+  <th>主题</th>
+  <th>章节</th>
+  <th>主题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>00</td>
+  <td><a href="#chapter-01">开始前：安全和规则</a></td>
+  <td>12</td>
+  <td><a href="#chapter-13">客户端/TUN/分流</a></td>
+</tr>
+<tr>
+  <td>01</td>
+  <td><a href="#chapter-02">零基础选方案</a></td>
+  <td>13</td>
+  <td><a href="#chapter-14">业务账号安全</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td><a href="#chapter-03">Outline 自建</a></td>
+  <td>14</td>
+  <td><a href="#chapter-15">12 类模式全景</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td><a href="#chapter-04">Amnezia 自建</a></td>
+  <td>15</td>
+  <td><a href="#chapter-16">商业 VPN / 机场</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td><a href="#chapter-05">电脑端配置</a></td>
+  <td>16</td>
+  <td><a href="#chapter-17">自建协议与 Xray/Hysteria</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td><a href="#chapter-06">手机和平板</a></td>
+  <td>17</td>
+  <td><a href="#chapter-18">SIM/eSIM/漫游</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td><a href="#chapter-07">量化稳定性</a></td>
+  <td>18</td>
+  <td><a href="#chapter-19">企业跨境接入</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td><a href="#chapter-08">故障排查树</a></td>
+  <td>19</td>
+  <td><a href="#chapter-20">Tailscale/远程工作站</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td><a href="#chapter-09">隐私与密钥</a></td>
+  <td>20</td>
+  <td><a href="#chapter-21">Tor/WARP/DNS 的真实边界</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td><a href="#chapter-10">费用与成本</a></td>
+  <td>21</td>
+  <td><a href="#chapter-22">五分钟专项故障树</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td><a href="#chapter-11">7 天验收计划</a></td>
+  <td>22</td>
+  <td><a href="#chapter-23">SLO 与主备演练</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td><a href="#chapter-12">技术原理 FAQ</a></td>
+  <td>23</td>
+  <td><a href="#chapter-24">对抗式审核</a></td>
+</tr>
+</tbody>
+</table>
+<h3>24—35：可照做的长期使用策略</h3>
+<table>
+<thead>
+<tr>
+  <th>章节</th>
+  <th>要解决的问题</th>
+  <th>章节</th>
+  <th>要解决的问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>24</td>
+  <td><a href="#chapter-25">30 分钟启动 + 日常流程</a></td>
+  <td>30</td>
+  <td><a href="#chapter-31">采购试用、打分与真实成本</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td><a href="#chapter-26">6 类用户的可复用配置画像</a></td>
+  <td>31</td>
+  <td><a href="#chapter-32">账号/数据分层和事件应对</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td><a href="#chapter-27">Mac/Windows/终端/IDE/Docker</a></td>
+  <td>32</td>
+  <td><a href="#chapter-33">SLO、监控、月度复盘</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td><a href="#chapter-28">iPhone/iPad/安卓/热点</a></td>
+  <td>33</td>
+  <td><a href="#chapter-34">10 个可复现故障剧本</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td><a href="#chapter-29">主备独立性和应急 SOP</a></td>
+  <td>34</td>
+  <td><a href="#chapter-35">30 天执行路线</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td><a href="#chapter-30">DNS/IPv6/TUN/路由规则</a></td>
+  <td>35</td>
+  <td><a href="#chapter-36">16 个常见误区与证据</a></td>
+</tr>
+</tbody>
+</table>
+<h2>20 份可直接填写的实操模板</h2>
+<p><a href="templates/%E6%96%B9%E6%A1%88%E5%8F%96%E8%88%8D%E5%8D%A1.md">方案取舍卡</a> · <a href="templates/%E4%B8%83%E5%A4%A9%E6%B5%8B%E9%87%8F%E8%A1%A8.csv">七天测量表</a> · <a href="templates/%E7%BD%91%E7%BB%9C%E6%96%B9%E6%A1%88%E8%A7%82%E5%AF%9F%E8%A1%A8.csv">网络方案观察表</a> · <a href="templates/%E6%9D%A5%E6%BA%90%E5%8F%AF%E4%BF%A1%E5%BA%A6%E7%99%BB%E8%AE%B0%E8%A1%A8.csv">来源可信度登记表</a> · <a href="templates/%E5%8D%8F%E8%AE%AE%E9%83%A8%E7%BD%B2%E9%AA%8C%E6%94%B6%E5%8D%A1.md">协议部署验收卡</a> · <a href="templates/%E4%BC%81%E4%B8%9A%E8%B7%A8%E5%A2%83%E6%8E%A5%E5%85%A5%E9%9C%80%E6%B1%82%E8%A1%A8.md">企业接入需求表</a> · <a href="templates/%E5%BA%94%E6%80%A5%E5%8D%81%E5%88%86%E9%92%9F%E5%A4%84%E7%BD%AE%E5%8D%A1.md">应急十分钟处置卡</a> · <a href="templates/%E5%AE%89%E5%85%A8%E6%A3%80%E6%9F%A5%E6%B8%85%E5%8D%95.md">安全检查清单</a> · <a href="templates/%E6%95%85%E9%9A%9C%E5%A4%8D%E7%9B%98.md">故障复盘</a></p>
+<p>补充：旧版 <a href="templates/%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95.md">部署记录</a>、<a href="templates/%E6%96%B9%E6%A1%88%E6%89%93%E5%88%86%E8%A1%A8.csv">方案打分表</a>、<a href="templates/%E5%BA%94%E6%80%A5%E5%9B%9E%E6%BB%9A%E5%8D%A1.md">应急回滚卡</a> 继续保留。</p>
+<h2>研究资料和审稿记录</h2>
+<ul>
+<li><a href="SOURCES.md">SOURCES.md</a> — 法律与项目官方文档，逐条可复核。</li>
+<li><a href="RESEARCH_LOG.md">RESEARCH_LOG.md</a> — X 检索局限、2026 年 10 月社区反馈矛盾、证据分级。</li>
+<li><a href="AUDIT.md">AUDIT.md</a> — v2.0 审核；<a href="AUDIT_V3.md">AUDIT_V3.md</a> — v3.0 的 18 项对抗测试、事实限制和复核要求。</li>
+<li><a href="SECURITY.md">SECURITY.md</a> — 如何提交不含密钥的漏洞报告。</li>
+</ul>
+<h2>本地生成、检查与发布</h2>
+<pre><code class="language-bash">python3 tools/validate_repo.py
+python3 tools/connection_check.py    # 可选：只测本机网络，不需要服务器密钥
+python3 -m pip install -r requirements-build.txt
+python3 tools/build_site.py
+python3 tools/slo_report.py templates/七天测量表.csv   # 填写测量表后，本地生成分组成功率和 p95
+</code></pre>
+<p><code>index.html</code> 已预编译为<strong>单文件离线阅读页（36 章 + 首页）</strong>；用户双击即可使用，查询不会发送到外部服务。所有脚本仅做有限的本机测试/静态校验，不能证明合法性、匿名性或中国大陆实测可用率。</p>
+<h2>参与贡献</h2>
+<p>欢迎补充<strong>可复现、经脱敏、带具体日期、设备和运营商</strong>的经验。不能提交可用订阅、账号、密钥、真实服务器 IP、第三方客户信息，也不能把推广帖伪装为中立实测。参阅 <a href="CONTRIBUTING.md">CONTRIBUTING.md</a>。MIT License。作者：<strong>AI 酋长 Andy</strong>。</p>
+<h2>作者与可选咨询</h2>
+<p>微信：<strong>AIPMAndy</strong> · <a href="https://metaver.vip/">个人官网</a> · <a href="https://github.com/AIPMAndy/china-overseas-network-guide">GitHub 项目</a></p>
+<p>如果你需要求职、职业发展或 AI 应用方面的咨询，可以添加微信并简单说明当前情况与具体问题。咨询是可选的，不影响免费阅读；不提供节点、订阅、跨境网络经营服务或合法性保证。</p>
+</section>
+<section class="chapter" id="chapter-01" data-search="00｜先读：法律边界、真实需求与威胁模型"><div class="chapter-index">01 / 36</div><h1>00｜先读：法律边界、真实需求与威胁模型</h1>
+<p><strong>本章结果：</strong>你知道“需要访问外部网站”和“有权配置何种跨境联网方案”是两件事，能辨别常见的高风险操作。</p>
+<h2>1. 先确定你的使用场景</h2>
+<p>将需求写成一句话，例如：“我需要在自己的电脑上访问某海外学术网站/代码托管平台，传输的是公开资料，不包含客户隐私。”如果涉及公司账号、源代码、财务、个人信息，先问信息安全负责人：是否有经过审批的专线、零信任网关、企业 VPN、海外云桌面或其他合规途径？组织网络政策可能比个人使用的技术选择更严格。</p>
+<p><strong>法规事实（请阅读原文）：</strong>《中华人民共和国计算机信息网络国际联网管理暂行规定》第六条对国际出入口信道作出规定；工信部 2017 年的通知明确约束未经批准开展跨境 VPN 等经营活动。不能由某篇文章推导出“所有个人使用都合法”或“所有个人使用都违法”的一刀切结论。法律适用取决于行为、地区、主体、用途和当下监管实践；有商业计划时应获得专业法律意见。</p>
+<ul>
+<li><a href="https://hbca.miit.gov.cn/xxgk/zcwj/flfg/art/2020/art_b118b9e4e97d4a8e9e6af358c78ac4dc.html">工信部：国际联网管理暂行规定</a></li>
+<li><a href="https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2017/art_a940645e940946e1a62cd6c90a4e994e.html">工信部：清理规范互联网网络接入服务市场通知</a></li>
+</ul>
+<h2>2. 这个指南不做的事</h2>
+<p>不售卖节点、订阅、VPS；不提供他人的登录凭据；不兜售“零风险”网络；不教非法经营或规避组织安全监管。示例 IP 统一用文档保留段 <code>203.0.113.0/24</code>，示例密钥用 <code>REPLACE_ME</code>。不要把本教程里的占位符当作真的可用服务器。</p>
+<h2>3. 五类威胁，逐一评估</h2>
+<table>
+<thead>
+<tr>
+  <th>风险</th>
+  <th>常见现象</th>
+  <th>你该做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>安装包供应链</td>
+  <td>搜索引擎广告页/群聊发来的改版客户端</td>
+  <td>下载页追溯官方项目，校验签名或 SHA256；拒绝要求关闭安全软件的未知程序</td>
+</tr>
+<tr>
+  <td>出口服务提供方</td>
+  <td>服务商能看到连接元数据，甚至非加密流量</td>
+  <td>使用 HTTPS，减少敏感活动，不轻信“零日志”的未经审计营销</td>
+</tr>
+<tr>
+  <td>网络位置暴露</td>
+  <td>DNS、IPv6、WebRTC 或应用绕开代理</td>
+  <td>分别检查代理模式；必要时按官方说明启用全局路由，验证回退能力</td>
+</tr>
+<tr>
+  <td>账号风控</td>
+  <td>频繁改变地区、共享出口、登录异常</td>
+  <td>使用长期一致的合规网络和账号安全设置，遵守平台条款，不保证不触发风控</td>
+</tr>
+<tr>
+  <td>凭据泄露</td>
+  <td>GitHub Issue、截图、终端录屏暴露密钥</td>
+  <td>每个设备单独授权，发现泄露立即撤销并重新签发</td>
+</tr>
+</tbody>
+</table>
+<h2>4. 开始前确认</h2>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>先确认网络用途和适用的法规、企业网络政策。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>明确要连接的设备与系统：Mac Intel/M 芯片、Windows x64/ARM、iOS、Android。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>明确可接受的费用和恢复时间。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>备份当前网络设置；知道如何关闭连接和卸载客户端。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>不在公共仓库或聊天记录里发布真实 IP、SSH 密码、私钥或订阅 URL。</li>
+</ul>
+<p><strong>完成凭证：</strong>在自己的私有记录里写下用途、设备、负责人（如适用）和可接受的停机时间。过不了这个检查，先暂停部署。</p>
+</section>
+<section class="chapter" id="chapter-02" data-search="01｜先选方案：不要先买一年套餐"><div class="chapter-index">02 / 36</div><h1>01｜先选方案：不要先买一年套餐</h1>
+<p><strong>本章结果：</strong>知道连接服务与软件的区别，选择一条能力、预算、风险均匹配的路线。</p>
+<blockquote>
+<p><strong>最新版扩展：</strong>先读 <a href="#chapter-15">12 种模式全景图</a>。本章下方三种路径是按管理责任归类，不代表市场只有三种连接方法。</p>
+</blockquote>
+<h2>1. 三种常见路径</h2>
+<table>
+<thead>
+<tr>
+  <th>路径</th>
+  <th>适合谁</th>
+  <th>你管理什么</th>
+  <th>最大问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>经审批的企业专线/零信任接入</td>
+  <td>业务、研发、客户数据有明确管理要求</td>
+  <td>身份认证与终端合规</td>
+  <td>费用、采购及权限审批</td>
+</tr>
+<tr>
+  <td>可信、具备适用授权的连接服务</td>
+  <td>不想自己管理服务器的用户</td>
+  <td>软件、账号、服务供应商风险</td>
+  <td>供给可靠性与个人信息处理方式</td>
+</tr>
+<tr>
+  <td>自建开源服务端（需核查法律及使用许可）</td>
+  <td>愿意承担 Linux VPS 运维和安全责任</td>
+  <td>服务器、端口、密钥、账单、备份</td>
+  <td>IP/链路问题、运维负担、长期可用性未知</td>
+</tr>
+</tbody>
+</table>
+<p><strong>常见错误：</strong>看见“某某客户端教程”，就以为装完 App 能上网。客户端只是遥控器；你还需要服务、授权和可达的网络链路。</p>
+<h2>2. 给零基础用户的选择顺序</h2>
+<p><strong>第 1 步：筛掉明显不可信的来源。</strong>要求远程控制电脑、索取 Apple ID 密码、关闭系统安全保护、安装未知证书、承诺“永久不封”的服务，先排除。免费服务不是原罪，但必须能回答运营主体、隐私条款、成本来源和客户支持。</p>
+<p><strong>第 2 步：先按月评估。</strong>自建也从可取消的最小机器开始；不要为未经实测的线路付一年钱。账单还需包含出口流量、税费、备份和域名（如果你的方案真正需要）。</p>
+<p><strong>第 3 步：选两种独立失败域。</strong>如果主备都在同一家机房、同一商家甚至同一上游网络，那么一处故障可能同时影响两条线路。备用方案最好有不同的服务供应商或网络接入路径，同时确保合法和受控。</p>
+<p><strong>第 4 步：定义“够用”。</strong>例如你只需要每天 1 小时查资料，就不需要以 4K 视频速度作为选型标准。按实际使用场景确定门槛：连接成功率、可用时段、延迟、售后响应、权限控制。</p>
+<h2>3. 选择服务器之前先问五个问题</h2>
+<ol>
+<li>我是否有合法、受许可的使用场景？</li>
+<li>操作系统是否在开源工具的官方支持范围？</li>
+<li>机器是否可从云控制台重置；是否有快照或恢复入口？</li>
+<li>是否支持稳定 SSH，并能在云厂商防火墙中控制入站规则？</li>
+<li>维护成本是否比购买适合自身业务的合规服务更合理？</li>
+</ol>
+<p><strong>通过标准：</strong>至少完成 <a href="templates/方案打分表.csv">方案打分表</a>，并给出放弃条件，例如“7 天关键访问成功率低于自设阈值就停用/更换方案”。</p>
+<p><strong>下一步：</strong><a href="#chapter-03">Outline</a> 或 <a href="#chapter-04">AmneziaVPN</a>；已有配置直接去 <a href="#chapter-05">电脑</a> 或 <a href="#chapter-06">手机</a>。</p>
+</section>
+<section class="chapter" id="chapter-03" data-search="02｜Outline：用官方 Manager 自建，按步骤验收"><div class="chapter-index">03 / 36</div><h1>02｜Outline：用官方 Manager 自建，按步骤验收</h1>
+<p><strong>适用条件：</strong>你已确认法律/合同允许；有一台自己管理的空白 Linux VPS，且具备 SSH/云控制台恢复能力。下列步骤基于 <a href="https://developer.getoutline.org/zh-CN/vpn/getting-started/server-setup-manager/">Outline 官方部署文档</a>，不同版本界面可能变化。</p>
+<h2>你需要准备什么</h2>
+<ul>
+<li>一台受控 Linux VPS（系统版本和 CPU 架构以 Outline 官方当前要求为准）；公网连接，云控制台救援入口。</li>
+<li>管理电脑（Windows/macOS/Linux）；从 <a href="https://getoutline.org/get-started/">getoutline.org</a> 取得 <strong>Outline Manager</strong>。</li>
+<li>实际使用设备；从官方地址取得 <strong>Outline Client</strong>。注意：Manager 管理服务器，Client 连接服务器。</li>
+<li>独立的 SSH 凭据。建议使用 SSH 密钥及云平台多因素认证；<strong>不要把凭据发送到公开聊天机器人、论坛或 Issue</strong>。</li>
+</ul>
+<h2>手把手部署</h2>
+<h3>第 1 步：确认服务器“干净”</h3>
+<p>在云厂商面板里保存当前系统、端口、账单信息；如果已有网站、数据库或代理服务，先做快照并检查冲突。确认云防火墙的 SSH 入口仅对可信管理地址开放（若网络条件允许），不要为省事直接永久开放所有端口。对服务器 SSH 端口、磁盘空间、时间同步做最小检查。</p>
+<p><strong>完成凭证</strong>：控制台可以看到运行状态；你能使用 SSH 登录；知道如何重置实例。</p>
+<h3>第 2 步：在管理电脑安装官方 Manager</h3>
+<p>前往 <code>https://getoutline.org/</code>，识别 Manager 和 Client 的不同。安装管理器，打开后点击 <strong>+</strong>。自己有 VPS 时选择 <strong>Set up Outline anywhere / 随时随地安装 Outline</strong>。需要在 VPS 执行的命令以<strong>此刻官方管理器所显示的命令</strong>为准；先检查命令会做什么，再通过 SSH 在受控机器操作。不要复制博客里的过期脚本或随机“一键脚本”。</p>
+<p><strong>可能失败</strong>：系统不支持、Docker 拉取失败、DNS 不可用、云防火墙阻断管理端口、残留服务占用端口。此时先查官方错误提示，别重复重装十次。</p>
+<h3>第 3 步：创建服务器和第一把密钥</h3>
+<p>Manager 显示服务端建立成功后，打开服务器详情；点击 <strong>+</strong> 创建一把 <strong>仅用于你的一台设备</strong>的访问密钥，按设备命名，例如 <code>my-mac</code>。正式密钥可能是包含服务器地址的 URI，<strong>不要贴到 GitHub</strong>。可以按 Manager 功能设置适当流量上限。</p>
+<p><strong>完成凭证</strong>：Manager 显示服务器健康状态（如有）及你创建的访问密钥，且你已安全保存管理入口。</p>
+<h3>第 4 步：装 Client，导入密钥</h3>
+<p>从 <a href="https://getoutline.org/get-started/">Outline 官方客户端</a> 下载适合设备的版本。打开 Outline Client → 添加连接/粘贴访问密钥 → 保存 → 连接。iOS 及 Android 应以官方应用商店或 Outline 官方备用下载页面为准。遇到 App Store 地区限制，先查官方支持渠道，不建议越狱或安装可疑企业签名包。</p>
+<p><strong>完成凭证</strong>：目标网站实际能加载、HTTPS 证书正常，并在不同网络下重复测试。</p>
+<h3>第 5 步：做撤销演练</h3>
+<p>新建一把演示密钥，在测试设备导入并确认成功。回到 Manager 删除这把演示密钥，验证它无法再连接。<strong>主用密钥不要在演练时误删。</strong>这一步证明你有退出和密钥轮换能力。</p>
+<h2>常见卡点</h2>
+<table>
+<thead>
+<tr>
+  <th>现象</th>
+  <th>最先检查</th>
+  <th>不应该做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Manager 连不到服务器</td>
+  <td>SSH、公网地址、云防火墙、系统支持</td>
+  <td>反复重装而不读错误</td>
+</tr>
+<tr>
+  <td>Manager 成功，Client 没网</td>
+  <td>密钥是否对应当前服务器，实际服务端防火墙/路由</td>
+  <td>把访问密钥贴论坛求助</td>
+</tr>
+<tr>
+  <td>一台设备能用，另一台不能</td>
+  <td>单设备网络、App 权限、不同密钥</td>
+  <td>立刻断言服务器坏了</td>
+</tr>
+<tr>
+  <td>连接成功但目标网站打不开</td>
+  <td>HTTPS 目标可达、DNS、分流和本地网络</td>
+  <td>为了“修复”关掉 TLS 证书验证</td>
+</tr>
+</tbody>
+</table>
+<h2>安全与结束检查</h2>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>每台设备一个独立密钥，方便撤销；退出设备后删除对应密钥。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>不把完整的 Manager 管理链接、SSH 私钥、Client 密钥放公共地方。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>持续关注 <a href="https://developer.getoutline.org/vpn/getting-started/share-access/">Outline 官方文档</a>；保持服务端和客户端更新。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>自建只验证了“当前可用”；还没通过 <a href="#chapter-11">七天验收</a>，不能称“稳定”。</li>
+</ul>
+</section>
+<section class="chapter" id="chapter-04" data-search="03｜AmneziaVPN：不用背命令，也能理解自建流程"><div class="chapter-index">04 / 36</div><h1>03｜AmneziaVPN：不用背命令，也能理解自建流程</h1>
+<p><strong>适用条件</strong>：受监管规则/服务条款允许；你有能正常 SSH 访问的自有 Linux VPS。主线参考 <a href="https://docs.amnezia.org/documentation/instructions/install-vpn-on-server/">Amnezia 官方 Self-hosted 教程</a>。实际连接表现因地区、运营商、服务器和时间而异，不承诺在中国大陆持续可用。</p>
+<h2>1. 准备与安装</h2>
+<ol>
+<li>在自己的电脑上从 Amnezia 官方网站/仓库取得 <strong>AmneziaVPN</strong> 客户端（核对项目发布者，不安装随机 APK）。</li>
+<li>先核查 <a href="https://docs.amnezia.org/">VPS 官方要求</a>、SSH 账号权限、云防火墙和实例救援能力。部署前做可恢复备份。</li>
+<li>打开客户端，点击 <strong>+</strong> 或 <strong>Get Started</strong>，选择 <strong>Self-hosted VPN</strong>。</li>
+<li>输入自己 VPS 的公网 IP、SSH 端口（默认不一定是 22）、SSH 用户名以及本地持有的密钥/密码。<strong>这些凭据仅输入你确认来源可靠的本地官方客户端；不要粘给教程作者。</strong></li>
+<li>选择 Automatic（当前官方文档介绍为安装 AmneziaWG）或者在 Manual 中自行选择支持的协议。按客户端界面安装，留意服务端运行状态、端口及协议类型。</li>
+<li>部署后通过客户端开启连接；打开日常需要的网站/API，记录实测结果。</li>
+</ol>
+<blockquote>
+<p>官方教程指出安装过程中可能用到随机 UDP 端口，并建议根据网络环境调整；<strong>不能把“换某个神奇端口”理解成保证有效</strong>。改端口前先确认云防火墙、服务器防火墙、其他服务和当地合规边界。见 <a href="https://docs.amnezia.org/documentation/instructions/install-vpn-on-server/">官方部署文档</a>。</p>
+</blockquote>
+<h2>2. 添加第二台设备</h2>
+<p>不要把“管理者全权限”凭据发给其他设备或任何陌生人。使用 Amnezia 的 <strong>Share → Guest access</strong>，选协议和设备，生成单独的访问配置。对于官方 AmneziaWG 客户端，官方说明应导出对应的 <strong>AmneziaWG native format <code>.conf</code></strong>；不要把 <code>vpn://</code> 连接密钥与 <code>.conf</code> 混为一谈。详见 <a href="https://docs.amnezia.org/documentation/instructions/amnezia-hosting-sharing/">官方分享文档</a>。</p>
+<p>逐台导入并连接；<strong>避免多设备复用单个原生配置文件</strong>。设备失去控制时，通过客户端的用户管理界面撤销对应授权并重新生成。</p>
+<h2>3. 用一分钟做验收</h2>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>客户端连接能建立。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>一般 HTTPS 网站可打开，目标工作网站/API 真实可用。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>改用手机热点后，知道是否仍可工作。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>关闭连接以后本机能恢复正常上网。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>第二设备有独立的访问配置；管理权限没有流出。</li>
+</ul>
+<h2>4. 失败后怎么修</h2>
+<p><strong>SSH 连接失败</strong>：服务器是否运行 → 登录账号和 SSH 端口是否正确 → 云厂商防火墙 → 本地网络是否能访问 SSH。不要盲目暴露 SSH 到全网。</p>
+<p><strong>安装失败</strong>：按官方支持的 Linux/软件要求核对；检查磁盘、Docker/内核相关依赖、时间、系统更新、端口占用，并只在有快照时重试。</p>
+<p><strong>连得上但无法使用</strong>：先用 <a href="#chapter-08">第 07 章排障树</a> 分离本地 DNS、目标网站、VPN 协议、服务器出口问题。不要因为一个网站失败就删除整个系统。</p>
+<p><strong>安全原则</strong>：任何“一键脚本”都应在读懂来源、权限及回滚方式后运行。业务服务器与个人实验服务器尽量分开。</p>
+</section>
+<section class="chapter" id="chapter-05" data-search="04｜电脑端：Mac、Windows、Linux 从安装到验收"><div class="chapter-index">05 / 36</div><h1>04｜电脑端：Mac、Windows、Linux 从安装到验收</h1>
+<p><strong>本章结果：</strong>你会找到可信的客户端、选择模式、导入有权使用的连接、定位“浏览器能用，软件不行”的原因。</p>
+<h2>先认识两个开关</h2>
+<p><strong>系统代理</strong>：让遵循系统代理设置的应用把符合条件的请求交给代理。某些游戏、终端程序、企业 App 或系统服务不一定遵循它。</p>
+<p><strong>TUN/设备级 VPN</strong>：创建虚拟网络接口，让更多流量可以经指定隧道走。需要更高系统权限，可能影响 DNS、局域网访问、企业 VPN、IPv6 与软件兼容性。<strong>它也不能天然保证所有流量都受保护</strong>，必须测试。</p>
+<h2>macOS：首选清晰可回滚的方式</h2>
+<ol>
+<li>点击苹果菜单 → <strong>关于本机</strong>，记下是 Apple 芯片还是 Intel、macOS 版本。</li>
+<li>如果走 <a href="#chapter-03">Outline</a> 方案，用 <a href="https://getoutline.org/get-started/">Outline 官网</a> 提供的客户端；若走 <a href="#chapter-04">AmneziaVPN</a>，用官方应用。不要随手在网络上安装“同名增强版”。</li>
+<li>导入你被授权使用的密钥或配置。第一次连接后，允许系统提示的网络扩展/VPN 权限前确认应用发布者。</li>
+<li>打开普通 HTTPS 站点、目标服务、终端工具，分别测试。终端的 <code>curl</code> 可能走系统代理，也可能读取 <code>http_proxy</code>/<code>https_proxy</code> 环境变量；因此要查实际进程的代理设置。</li>
+<li>退出客户端并关闭代理，确认不再残留系统代理或 DNS 修改。</li>
+</ol>
+<p><strong>自查命令（仅查看状态，不修改系统）：</strong></p>
+<pre><code class="language-bash"># 检查 macOS 当前代理（接口名按自己的网络服务替换）
+networksetup -listallnetworkservices
+scutil --proxy
+
+# DNS 状态摘要
+scutil --dns | head -n 35
+
+# 网卡与 IP 信息（输出可能涉及隐私，勿直接公开）
+ifconfig | head -n 40
+</code></pre>
+<h2>Windows：明确 x64 / ARM64</h2>
+<ol>
+<li><strong>设置 → 系统 → 系统信息</strong> 查看系统架构。</li>
+<li>安装官方 Windows 客户端。若使用规则类客户端，可参考 <a href="https://github.com/clash-verge-rev/clash-verge-rev">Clash Verge Rev 官方仓库</a>及其 Releases；安装客户端后仍<strong>需要自己的授权配置</strong>，不能凭软件名称自动联网。</li>
+<li>按软件官方说明导入配置、开启系统代理并测试。只有存在应用不服从系统代理等明确需求时，再考虑以管理员权限开启 TUN，并记录原设置。</li>
+<li>关闭连接后查看“设置 → 网络和 Internet → 代理”，确认没有留下无法访问的旧代理地址。</li>
+</ol>
+<p><strong>只读检查（PowerShell）：</strong></p>
+<pre><code class="language-powershell">Get-NetIPConfiguration
+Get-DnsClientServerAddress
+Test-NetConnection example.com -Port 443
+</code></pre>
+<h2>Linux：确认桌面与命令行是否走同一条路</h2>
+<p>Linux 上 GUI 代理、shell 环境变量、容器、systemd 服务可能各走各的。不要只用 Firefox 能否打开网站判断整个 Linux 主机都已经通过隧道。安装软件以维护方文档与发行版官方包管理为准。</p>
+<pre><code class="language-bash"># 不显示任何密钥，仅查看是否存在常见代理环境变量（值可能敏感）
+printenv | grep -Ei '^(http|https|all|no)_proxy=' | sed -E 's/=.*/=[REDACTED]/I'
+
+# 基础 DNS 解析与 TLS 访问测试
+getent hosts example.com
+curl -I --max-time 10 https://example.com
+</code></pre>
+<h2>一次成功的定义</h2>
+<p><strong>不能只看软件界面显示“已连接”。</strong>至少有三个凭证：目标 HTTPS 站点能加载；切换网络后重复测试；断开时系统网络能正常回退。执行完 <a href="#chapter-07">第 06 章</a> 的测量再做稳定性判断。</p>
+</section>
+<section class="chapter" id="chapter-06" data-search="05｜手机与平板：iPhone、iPad、Android"><div class="chapter-index">06 / 36</div><h1>05｜手机与平板：iPhone、iPad、Android</h1>
+<p><strong>本章结果：</strong>不同设备有各自的授权配置，能解释 Wi‑Fi 正常但蜂窝流量失败的情况。</p>
+<h2>iPhone / iPad</h2>
+<ol>
+<li><strong>设置 → 通用 → 关于本机</strong>，确认 iOS/iPadOS 版本。应用商店可用性可能受 Apple ID 地区、操作系统版本及应用审核政策影响。</li>
+<li>从 <a href="https://developer.getoutline.org/zh-CN/download-links/">Outline 官方下载说明</a>获取 Outline Client，或从 <a href="https://docs.amnezia.org/documentation/alternative-clients/">Amnezia 官方支持文档</a>找到 AmneziaVPN/AmneziaWG 的合法应用来源。不同应用支持的配置格式不同。</li>
+<li>在应用中导入<strong>专为这台设备</strong>生成的授权连接。系统弹出“允许添加 VPN 配置”时，确认发布者与用途，然后按自身安全政策决定是否允许。</li>
+<li>分别在家庭 Wi‑Fi、蜂窝移动网络、手机热点下测试目标 HTTPS 服务，记下可用/不可用状态；如果出于隐私原因不适合测试某些敏感服务，就只用自己有权访问的测试站点。</li>
+<li>测试离开 VPN/应用后，是否能恢复普通网络；若与企业 MDM、工作 VPN 冲突，应优先遵循公司管理要求。</li>
+</ol>
+<p><strong>遇到“当前地区无法下载”？</strong>查看官方提供的其他合法渠道。不要为了这一步让陌生人远程登录 Apple ID、索取验证码，或诱导你安装未知描述文件/企业证书。</p>
+<h2>Android</h2>
+<ol>
+<li><strong>设置 → 关于手机</strong>，查看 Android 版本与 CPU 架构。</li>
+<li>尽量通过官方应用商店或开发者维护的 GitHub Releases 下载；核对项目所有者、签名/哈希以及是否为稳定版。</li>
+<li>导入自己的授权连接；授予 VPN 权限前确认开发者与安装包来源。</li>
+<li>在不同网络（Wi‑Fi/5G/热点）做相同验收；注意部分手机的省电策略可能关闭后台进程，查官方电池优化指引。</li>
+<li>若设备支持“始终开启 VPN”“无 VPN 时阻止连接”，理解这些选项会影响离线和局域网服务。先确保有应急回退方法。</li>
+</ol>
+<h2>三个典型问题</h2>
+<p><strong>1. Wi‑Fi 可以，5G 不行。</strong>先关掉 Wi‑Fi 只测 5G，再换热点对照。可能是运营商、IPv4/IPv6、UDP 路径或本机 VPN 权限问题；不能仅凭一项测试断定原因。</p>
+<p><strong>2. 微信/银行 App 出现异常。</strong>暂时退出 VPN，在符合平台和公司要求的网络下使用，再逐项排查分流规则。不要为尝试访问外站而改变支付及实名身份信息。</p>
+<p><strong>3. 手机能访问，电脑不能。</strong>比对的是同一<strong>有效密钥及同一服务端</strong>吗？有些配置绑定设备或限制连接数；检查电脑应用、系统代理、网络权限，而非首先重装服务器。</p>
+<h2>交付证明</h2>
+<p>在 <a href="templates/七天测量表.csv">7 天测量表</a> 建立至少两个设备 + 两种网络的记录。公开问问题时只写设备系统版本、现象和脱敏错误，不发订阅/配置文件全文。</p>
+<h2>eSIM / 漫游专章</h2>
+<p>若你在考虑境外旅行 eSIM、实体漫游卡，请在付款前先看 <a href="#chapter-18">第 17 章</a>，核查机型、运营商和实际出口。</p>
+</section>
+<section class="chapter" id="chapter-07" data-search="06｜稳定性：别看测速截图，先定义指标"><div class="chapter-index">07 / 36</div><h1>06｜稳定性：别看测速截图，先定义指标</h1>
+<p><strong>本章结果：</strong>能够用七天的证据判断方案是否适合自己，避免“今天打开了 Google 就说永久稳定”。</p>
+<h2>一、四个维度</h2>
+<ol>
+<li><strong>连接成功率</strong>：按固定采样时间，成功建立连接的次数 / 尝试次数。</li>
+<li><strong>目标服务可用率</strong>：连接已建立的情况下，真实工作服务按时响应的次数 / 总访问次数。</li>
+<li><strong>时延分布</strong>：p50（中位数）与 p95（95% 分位数）比一次测速平均值更有参考意义。跨境网络更容易受到高峰拥塞影响。</li>
+<li><strong>恢复能力</strong>：一次中断从发现到恢复需要几分钟？主用不可用时能否切到备用？DNS/代理有没有残留？</li>
+</ol>
+<p><strong>注意口径</strong>：请区分“无法连接”“目标网站本身故障”“访问延迟过高”“成功但慢”。样本量太少，只能叫初步记录，不足以推断全年稳定性。</p>
+<h2>二、一个可以自行修改的验收标准</h2>
+<p>下面是<strong>演示阈值，不代表行业标准或真实实测数据</strong>。你可以按工作任务重新设定：</p>
+<table>
+<thead>
+<tr>
+  <th>指标</th>
+  <th>示例标准</th>
+  <th>如何记录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>关键站点成功率</td>
+  <td>≥ 95%</td>
+  <td>每天 3 个时段 × 7 天，每次记录成功与否</td>
+</tr>
+<tr>
+  <td>连接建立耗时</td>
+  <td>大多数尝试 ≤ 15 秒</td>
+  <td>手机秒表/客户端状态；关键看长尾</td>
+</tr>
+<tr>
+  <td>关键页面响应时间</td>
+  <td>p95 ≤ 8 秒</td>
+  <td>同一网址，标准化测试网络</td>
+</tr>
+<tr>
+  <td>失败后恢复时间</td>
+  <td>≤ 10 分钟</td>
+  <td>记录首次失败和恢复时刻</td>
+</tr>
+<tr>
+  <td>备用方案</td>
+  <td>7 天中至少演练 2 次</td>
+  <td>从主用断开到备用正常使用</td>
+</tr>
+</tbody>
+</table>
+<p>选择测试时段如 <strong>09:00、15:00、21:00（北京时间）</strong>；这只是固定采样例子，要尽量包含你实际工作时段。每个时段至少测两项你真正需要的功能：例如 GitHub 页面和具体文档/API。不要把不同设备、不同运营商数据混成一个看似漂亮的平均值。</p>
+<h2>三、第一次连接后照这个顺序验收</h2>
+<ol>
+<li><strong>基础网络</strong>：不开客户端，也能访问正常国内网络吗？不能则先修本地宽带。</li>
+<li><strong>客户端</strong>：服务端/客户端状态是否连接；设备是否有正确权限？</li>
+<li><strong>HTTPS</strong>：访问目标站点时浏览器没有证书错误，不出现异常重定向。</li>
+<li><strong>DNS</strong>：通过系统工具检查当前解析器与客户端设置一致；<strong>单一 DNS 检测网站不能证明所有应用没有 DNS 泄漏</strong>。</li>
+<li><strong>IPv6</strong>：记录本地是否启用 IPv6，确认它的路由是否符合你的预期；不要随便关闭全系统 IPv6 作为“万能修复”。</li>
+<li><strong>应用层</strong>：浏览器、终端、真正使用的 App 分别测试。</li>
+<li><strong>切换/回退</strong>：关闭客户端后，是否留下不可达的系统代理或 DNS 设置。</li>
+</ol>
+<h2>四、主备线路该怎么设计</h2>
+<p><strong>两个节点不等于两条独立备份。</strong>如果它们都在同一家供应商、同一个数据中心、同一种接入方式，可能一起失败。主备最好分开供应商/机房/网络路径，且均有合法使用依据。优先采用有明确管理、合同和技术支持的方案。</p>
+<p>备份策略只需要回答四句话：“主用是什么？出现什么条件切换？备用是什么？失败后如何退回正常网络？”把它写到 <a href="templates/应急回滚卡.md">回滚卡</a>，每周演练一次。</p>
+<p><strong>完成凭证：</strong>至少有 <a href="templates/七天测量表.csv">7 天观测表</a> 和一份“通过/不通过 + 原因”的结论。</p>
+</section>
+<section class="chapter" id="chapter-08" data-search="07｜排障树：网络坏了，按这个顺序查"><div class="chapter-index">08 / 36</div><h1>07｜排障树：网络坏了，按这个顺序查</h1>
+<p><strong>本章结果：</strong>不再遇到问题就立刻换服务器、重装系统或发送含密钥的日志。</p>
+<h2>第 1 关：断开客户端，本机能否正常上网？</h2>
+<ul>
+<li><strong>不能</strong>：检查 Wi‑Fi/网线/蜂窝数据、路由器、运营商；暂停处理 VPN。尝试另一个普通 HTTPS 站点，确认不是单一网站宕机。</li>
+<li><strong>可以</strong>：继续检查客户端。记录故障起始时间、设备、网络，别先改十项设置。</li>
+</ul>
+<h2>第 2 关：客户端是否已经成功建立连接？</h2>
+<ul>
+<li><strong>未连接</strong>：查看输入的是不是受支持的格式、密钥是否过期/撤销、系统 VPN 权限、客户端版本；连接错误日志应先脱敏。</li>
+<li><strong>显示已连接</strong>：继续第 3 关。界面显示已连接并不等于目标网站可用。</li>
+</ul>
+<h2>第 3 关：同一服务端，在另一台设备/另一种网络是否能用？</h2>
+<table>
+<thead>
+<tr>
+  <th>对照</th>
+  <th>更值得排查的方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>相同服务端，Mac 不行、手机行</td>
+  <td>Mac 客户端、系统代理、DNS、权限、企业安全软件</td>
+</tr>
+<tr>
+  <td>Mac 家宽不行、手机热点行</td>
+  <td>家宽链路、路由器、DNS 或运营商路径差异</td>
+</tr>
+<tr>
+  <td>两台设备 + 两种网络都失败</td>
+  <td>服务端状态、机房链路、密钥/协议统一问题（仍需验证）</td>
+</tr>
+<tr>
+  <td>只有一个网站失败</td>
+  <td>目标服务、账号限制、HTTPS、分流规则，先排除网站侧问题</td>
+</tr>
+</tbody>
+</table>
+<p>注意：上表是<strong>优先排查方向，不等同于已经确定原因</strong>。</p>
+<h2>第 4 关：若你维护自己的 VPS，检查什么？</h2>
+<p>只在有授权的机器上操作。以下是<strong>只读检查</strong>示例，可先在云控制台确认运行状态：</p>
+<pre><code class="language-bash"># 系统状态与资源
+uptime
+df -h
+free -h
+
+# 服务监听的本机端口（输出可能含内网地址，公开前脱敏）
+sudo ss -lntup
+
+# 检查防火墙状态（依系统选择其一；只读）
+sudo ufw status verbose
+sudo nft list ruleset
+
+# 查看近 20 条系统关键消息（可能敏感，不直接公开）
+sudo journalctl -p err -n 20 --no-pager
+</code></pre>
+<p>若存在服务端软件异常，依据 <strong>对应项目官方文档</strong>查进程与日志。不要把 <code>curl | bash</code> 当成所有问题的修复方法，尤其当服务器同时运行生产业务时。</p>
+<h2>第 5 关：DNS、IPv6、系统代理怎么定位？</h2>
+<ul>
+<li><strong>DNS</strong>：域名解析不到，但 IP 访问也可能涉及 TLS/SNI、证书与路由；不能单凭“换成某个公共 DNS”判断。诊断时比较系统 DNS、客户端策略与受控测试域名。</li>
+<li><strong>IPv6</strong>：部分网络仅有 IPv6 或优先 IPv6，若隧道/分流覆盖不一致，结果会分裂。先记录和核对，之后选择正确、可回退的配置。</li>
+<li><strong>系统代理</strong>：有些应用不遵循系统代理；有些只支持 HTTP(S) 或 SOCKS；终端还可能有环境变量。测试时要说清楚哪一个 App 走了哪一条路径。</li>
+</ul>
+<h2>第 6 关：什么情况下停止折腾？</h2>
+<p>连续 30 分钟无法确定根因、且改变配置会影响生产业务时，按回滚卡恢复正常网络；再单独排障。换机器前先看监测数据；如果是服务端被暂停、账单欠费或 SSH 凭据失效，换协议也不会解决问题。</p>
+<h2>五张截图就够排障（只提供脱敏版）</h2>
+<ul>
+<li>客户端名称与版本、操作系统及 CPU 架构。</li>
+<li>连接状态及<strong>遮住密钥/服务器地址</strong>的错误文本。</li>
+<li>云控制台显示实例运行/停止状态（账号、实例 ID、IP 打码）。</li>
+<li>在不同网络下的同一目标服务测试结果。</li>
+<li>执行过的步骤、哪一步开始异常。</li>
+</ul>
+<p><strong>完成凭证</strong>：填一份 <a href="templates/故障复盘.md">故障复盘表</a>，明确故障被定位在哪一层；证据不够时写“原因未确认”。</p>
+<h2>按症状快速定位</h2>
+<p>更细的 8 种故障场景及 5 分钟决策树见 <a href="#chapter-22">第 21 章</a>。</p>
+</section>
+<section class="chapter" id="chapter-09" data-search="08｜隐私和安全：比“IP 看起来像外国”更重要"><div class="chapter-index">09 / 36</div><h1>08｜隐私和安全：比“IP 看起来像外国”更重要</h1>
+<p><strong>本章结果：</strong>你知道谁能看到什么、怎样防止凭据泄露、怎么在设备异常时撤销权限。</p>
+<h2>先知道谁有机会看到流量</h2>
+<table>
+<thead>
+<tr>
+  <th>参与方</th>
+  <th>通常可能观察到什么</th>
+  <th>常见误解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>本地网络与接入运营商</td>
+  <td>与某服务器通信的时段、数据量、部分连接元数据</td>
+  <td>VPN 不等于“没有任何痕迹”</td>
+</tr>
+<tr>
+  <td>出口服务端/服务提供商</td>
+  <td>公网目标及部分连接元数据；非端到端加密内容可能被读取</td>
+  <td>不能仅靠口头“零日志”宣传判断可信</td>
+</tr>
+<tr>
+  <td>目标网站</td>
+  <td>账号、Cookies、设备/浏览器指纹、出口 IP、登录行为</td>
+  <td>“出口 IP 在美国”不等于“网站认定你在美国”</td>
+</tr>
+<tr>
+  <td>本机安装的软件</td>
+  <td>被授权访问的数据取决于操作系统权限</td>
+  <td>开源也需要核对下载包与更新机制</td>
+</tr>
+</tbody>
+</table>
+<p>HTTPS 保护端到端内容，但不能覆盖所有追踪与账号风险。网络安全是多个控制叠加，不是一个开关。</p>
+<h2>十条必须做的动作</h2>
+<ol>
+<li>客户端只用官网或项目维护者控制的官方 Releases；有校验码时验证安装文件。注意校验值也应从可信来源获取。</li>
+<li>云账号与重要网站开启 MFA/通行密钥，不复用密码。</li>
+<li>SSH 优先密钥认证，最小化管理入口；<strong>完成登录密钥迁移并测试成功之前，不贸然关闭密码登录。</strong></li>
+<li>每台设备独立连接凭据；离职、丢失或共享结束时立即撤销。</li>
+<li>不把订阅 URL、<code>ss://</code>、<code>vpn://</code>、<code>.conf</code>、二维码、私钥、SSH 密码提交到 GitHub、Issue 或 LLM 提示词。</li>
+<li>脱敏网络日志：IP、域名、手机号、路径、令牌、Cookie、账号 ID 都可能具有可识别性。</li>
+<li>把 VPN 客户端、系统和服务器纳入定期更新；先备份、确认兼容性，再升级生产设备。</li>
+<li>有隐私诉求时，理解 DNS、IPv6、WebRTC 与代理分流的区别，按实际应用测试；不依赖单页“检测全绿”。</li>
+<li>服务端限制暴露端口；不在实验服务器存放多业务客户敏感数据。</li>
+<li>确保一键退出与断开后普通网络恢复；网络恢复不应依赖继续购买某服务。</li>
+</ol>
+<h2>SSH 安全的具体顺序</h2>
+<ul>
+<li>在 Mac/Linux 本地用 <code>ssh-keygen -t ed25519 -a 64</code> 生成<strong>专用的</strong> SSH 密钥，并设置强口令；存入系统密码管理器/硬件保护环境。</li>
+<li>将<strong>公钥</strong>授权到服务器适当账号；别把<strong>私钥</strong>传到 VPS、GitHub 或聊天记录。</li>
+<li>在新的终端用密钥成功登录后再考虑调整 SSH 认证策略；保持云厂商救援控制台和备用访问渠道。</li>
+<li>更改 SSH 防火墙规则时先保留已建立的会话、另开终端验证，避免误把自己锁在外面。</li>
+</ul>
+<h2>发现密钥泄露了怎么办？</h2>
+<p><strong>先撤销，后清理。</strong>立即在管理界面废除相应访问密钥/令牌，检查是否有未知设备、异常账单与访问记录，签发新凭据。已上传的私钥不能靠删除一条聊天或 GitHub commit 就恢复安全；要假设它已被复制。若泄露包含生产系统或个人信息，应按组织事故流程升级处置。</p>
+<p><strong>完成凭证</strong>：逐条完成 <a href="templates/安全检查清单.md">安全检查清单</a>。</p>
+</section>
+<section class="chapter" id="chapter-10" data-search="09｜花多少钱：小心“首月便宜，次月昂贵”"><div class="chapter-index">10 / 36</div><h1>09｜花多少钱：小心“首月便宜，次月昂贵”</h1>
+<p><strong>本章结果：</strong>用一个简单公式判断费用，而不是只看 VPS 的标价。</p>
+<h2>成本拆成五部分</h2>
+<p><strong>月实际总成本 = 服务器/合规接入月费 + 传出流量超量费用 + 维护投入折算 + 备份线路费用 + 必要税费/汇率损失。</strong></p>
+<table>
+<thead>
+<tr>
+  <th>项目</th>
+  <th>建议检查的合同内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>初装与续费</td>
+  <td>首月是否优惠、下月原价、续费通知、可否随时取消</td>
+</tr>
+<tr>
+  <td>流量</td>
+  <td>是单向传出计费还是双向计费，有无流量上限</td>
+</tr>
+<tr>
+  <td>带宽与地域</td>
+  <td>国际出口带宽有无实测，夜间/高峰是否差异明显</td>
+</tr>
+<tr>
+  <td>风控和资源回收</td>
+  <td>滥用政策、账号实名要求、IP 变更和数据删除</td>
+</tr>
+<tr>
+  <td>服务和支持</td>
+  <td>服务器宕机能否工单处理、多久回复、控制台能否重装</td>
+</tr>
+</tbody>
+</table>
+<h3>一个演示计算，不代表真实市场报价</h3>
+<p>假设服务器每月 40 元，额外流量 10 元，备份线路 30 元，维护时间 2 小时按 50 元/小时计：</p>
+<p><strong>总成本 = 40 + 10 + 30 + 2 × 50 = 180 元/月。</strong></p>
+<p>自行替换参数。价格只是演示；具体按供应商当月账单和条款核验。即使花了钱，也不能买来“永不失效”的保证。</p>
+<h2>支付与取消的安全边界</h2>
+<ul>
+<li>优先选能查看清晰发票/条款、实名要求与退款办法的服务商。</li>
+<li>不为“终身永久稳定”提前支付大额费用；保留付款与服务约定。</li>
+<li>不向陌生人发送账户验证码、加密货币私钥或远程控制授权。</li>
+<li>若实际使用需企业合规审查，切勿用个人账号绕过公司采购审批。</li>
+</ul>
+<h2>放弃条件（先写再买）</h2>
+<p>例子：“若 7 天内主用目标站点可用率不足我自己设定的 95%，或 30 天综合成本超过 250 元，就暂停续费并复查方案。”这是预算管理样例，不是对服务品质的保证。</p>
+<p><strong>完成凭证</strong>：用 <a href="templates/方案打分表.csv">方案评分表</a> 对至少两个可行且合规的选项打分。</p>
+</section>
+<section class="chapter" id="chapter-11" data-search="10｜七天验收：把“稳定”变成可验证的证据"><div class="chapter-index">11 / 36</div><h1>10｜七天验收：把“稳定”变成可验证的证据</h1>
+<p><strong>本章结果：</strong>不再凭一天的顺畅体验就付一年钱。</p>
+<p><strong>第 1 天：基线。</strong>不开客户端测试国内普通 HTTPS 网站、目标公开站点，记录原始网络条件；安装来自官方渠道的客户端，完成回滚演练。保存系统版本与应用版本。</p>
+<p><strong>第 2 天：同一设备两种网络。</strong>同一时段分别测试家宽和手机热点；记录“连接能否建立”“目标服务是否可用”“耗时”。不要把目标网站自身故障误判成通道故障。</p>
+<p><strong>第 3 天：至少两台设备。</strong>Mac/Windows 与 iPhone/Android 使用各自授权配置，检查连接数限制、系统代理、TUN/设备 VPN 权限。</p>
+<p><strong>第 4 天：高峰和非高峰。</strong>按预定时间表重复测量，至少覆盖一个晚间实际使用时段。</p>
+<p><strong>第 5 天：安全检查。</strong>核对官网来源、MFA、SSH 权限、密钥撤销能力、日志脱敏、更新机制。</p>
+<p><strong>第 6 天：主备切换。</strong>在不破坏线上服务的前提下，模拟“主用断开”，完成备用连接和恢复操作；记录恢复时间。备用必须属于合法且获得授权的路径。</p>
+<p><strong>第 7 天：复盘决策。</strong>分别按设备、网络、时段计算可用率；故障分类，列出仍无法解释的异常。按预先设定的阈值判定保留、继续试用、放弃。</p>
+<h2>最低记录粒度</h2>
+<p>填写 <a href="templates/七天测量表.csv">七天测量表.csv</a>，每次测试一行，字段有日期、时间、设备、网络、方案编号、客户端连接、目标网站响应、页面耗时、错误类别、切换耗时等。不填任何真正的密钥/IP/订阅地址。</p>
+<p><strong>计算公式：</strong></p>
+<pre><code class="language-text">连接成功率 = 连接成功次数 / 连接尝试总次数
+目标可用率 = 目标服务成功次数 / 目标服务测试次数
+恢复时间 = 恢复成功时间 - 首次确认异常时间
+</code></pre>
+<p>不要在连接失败的时候跳过记录；不要把同一时段连续刷新 20 次算成 20 个“独立成功”的证据。若某天漏测，应明确写“缺失”，不填 100%。</p>
+<h2>七天验收结论模板</h2>
+<blockquote>
+<p>我的目标是____；总计有效测量____次，设备____，网络____。连接成功____次，目标可用____次；最长恢复____分钟。失败主要集中于____；对照实验表明____。我将选择____，原因____；未确认风险____。下次复核日期____。</p>
+</blockquote>
+<p><strong>验收标准</strong>：形成一份带样本量、记录口径、失败记录和未确认项的报告；不凭一次速度测试确定结论。</p>
+</section>
+<section class="chapter" id="chapter-12" data-search="11｜技术原理：用大白话解释为什么会出问题"><div class="chapter-index">12 / 36</div><h1>11｜技术原理：用大白话解释为什么会出问题</h1>
+<h2>1. 为什么同一个软件，有些人能用、有些人不行？</h2>
+<p>你的网络请求大致经过：<strong>设备 → 客户端及系统路由 → 家宽/移动运营商 → 服务端所在网络 → 目标站点</strong>。其中任意一段拥堵、不可达、受策略限制、认证失败，都可能造成问题。客户端名字相同，不等于线路、服务、密钥和本地 DNS 相同。</p>
+<h2>2. 什么是代理、VPN、隧道、节点和机场？</h2>
+<ul>
+<li><strong>代理</strong>：中间转发请求的应用层或网络层机制。HTTP 代理、SOCKS 代理各有应用支持和覆盖边界。</li>
+<li><strong>VPN</strong>：通过虚拟网络接口等方式建立受控制的逻辑网络连接；具体的路由与加密取决于实现。</li>
+<li><strong>隧道</strong>：把某种网络流量封装进另一种连接传输的技术统称，不等于天然匿名。</li>
+<li><strong>节点</strong>：行业口语里常指一个服务端入口；它是否由可信实体运营、有没有日志，无法仅从名称得知。</li>
+<li><strong>机场</strong>：中文互联网中对一些订阅服务商的俗称；资质、隐私和安全差异很大，不能把它等同于正规批准的跨境接入服务。</li>
+</ul>
+<h2>3. DNS 是什么？为什么会出现“能打开 IP，打不开域名”？</h2>
+<p>DNS 把域名变成 IP，就像查地址簿。但“直接打开 IP”对 HTTPS 网站不一定正常，因为 TLS 证书校验、SNI、虚拟主机仍需要域名。排障应分开验证 DNS 解析、TCP/TLS、HTTP 响应，不把其中之一当成全部。</p>
+<h2>4. 为什么系统代理有效，终端却不能用？</h2>
+<p>很多图形 App 读取系统代理；终端程序、容器或后台服务可能分别读取自己的代理环境变量或配置。TUN 可以覆盖更多流量，但也可能改变 DNS、IPv6 和局域网路由。</p>
+<h2>5. 为什么 IP 属地和设备位置不是一回事？</h2>
+<p>网站可能综合 IP 位置库、账号历史、GPS/定位权限、浏览器指纹、支付地区和安全风控来判断地区。一个国外出口并不能代表你的设备、身份或帐号真的位于那个国家。不要用伪造身份绕过平台的服务条款。</p>
+<h2>6. 是不是买住宅 IP 就一定稳定/一定不会封？</h2>
+<p>不是。稳定性受网络路由、供应商和负载影响；账号的使用资格和风控并非只看 IP。宣称“住宅 IP = 100% 安全”的营销没有足够依据。</p>
+<h2>7. 为什么不能到处贴订阅链接让别人排障？</h2>
+<p>不少订阅链接、二维码和配置文件直接包含访问凭据。泄露之后他人可能占用额度、查看部分连接信息，或增加相关服务的滥用风险。排障仅分享<strong>脱敏</strong>版本与错误类别。</p>
+<h2>8. 断网如何恢复？</h2>
+<p>先关闭隧道/客户端，再确认系统代理与 VPN 配置，必要时重新连接原来的 Wi‑Fi；企业设备请使用 IT 官方恢复流程。切记要先保存原设置，无法恢复时找设备管理员。</p>
+<h2>9. “连接成功”是不是代表所有 App 都安全？</h2>
+<p>不是。不同 App 的代理、DNS 与路由覆盖可能不同；网站仍可能通过账号和设备信息识别你。需要端到端加密、软件权限管理、MFA 和最小权限。</p>
+<h2>10. 这个项目多久更新一次？</h2>
+<p>工具发布频繁。本仓库记录每次核对日期，并把<strong>官方文档/发行页</strong>作为事实来源。某个截图或按钮名发生变化，请提交 Issue 并附上<strong>不含个人信息</strong>的变化描述。</p>
+</section>
+<section class="chapter" id="chapter-13" data-search="12｜进阶：理解 Clash Verge Rev、sing-box、规则与 TUN"><div class="chapter-index">13 / 36</div><h1>12｜进阶：理解 Clash Verge Rev、sing-box、规则与 TUN</h1>
+<p><strong>本章结果：</strong>认识高级客户端的边界，避免“全局”和“规则模式”乱切造成信息泄露或工作中断。</p>
+<h2>工具不是服务商</h2>
+<ul>
+<li><strong><a href="https://github.com/clash-verge-rev/clash-verge-rev">Clash Verge Rev</a></strong>：Windows/macOS/Linux 图形客户端，基于 Mihomo（Clash Meta）生态，软件本身<strong>不包含可用节点</strong>。安装包以官方 GitHub Releases 为准，核对最新发行版兼容性。</li>
+<li><strong><a href="https://sing-box.sagernet.org/">sing-box</a></strong>：跨平台网络代理工具与配置生态，官方文档持续更新。<strong>其 iOS App Store 上架状态可能变化</strong>，应以 Apple 平台官方文档实时信息为准。</li>
+<li><strong><a href="https://github.com/hiddify/hiddify-app">Hiddify App</a></strong>：开源多平台客户端，使用前核对支持格式、发布者及对应系统发行包。</li>
+<li><strong>Outline / AmneziaVPN</strong>：提供官方图形化管理和客户端体验，配置格式不完全相同，不可随意互换。</li>
+</ul>
+<h2>有授权配置时，最小安全上手步骤</h2>
+<ol>
+<li>从项目维护者的 GitHub Releases 取得<strong>正式稳定版</strong>，核对系统架构，必要时校验官方发布的 SHA256。</li>
+<li>导入你有权使用、来源明确的配置（可能是本地文件或一次性授权链接）。<strong>未知远程订阅可能变化，内容不能默认可信。</strong></li>
+<li>先用软件的“系统代理 + 明确规则”测试一个低风险 HTTPS 页面；不要在不理解权限时直接开启所有增强模式。</li>
+<li>打开规则、DNS、IPv6 页面，检查“直连/代理/阻断”的策略是否匹配工作要求；不同软件的按钮名称和格式会更新。</li>
+<li>只有在需要覆盖更多应用流量、且理解本地网络受影响范围时，才启用 TUN；测试微信/本地打印机/企业 VPN/局域网资源等是否异常。</li>
+<li>保存设置快照，在故障时一键恢复到原先能工作的配置。</li>
+</ol>
+<h2>规则模式的四个典型坑</h2>
+<table>
+<thead>
+<tr>
+  <th>现象</th>
+  <th>为什么</th>
+  <th>如何核查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>浏览器能访问，CLI 不行</td>
+  <td>CLI 未使用系统代理或受不同 DNS 规则影响</td>
+  <td>检查终端变量、应用内代理设置</td>
+</tr>
+<tr>
+  <td>国内网站也变慢</td>
+  <td>被错误路由到远端</td>
+  <td>看命中规则日志（脱敏），调整受控策略</td>
+</tr>
+<tr>
+  <td>手机 App 提示地区/登录异常</td>
+  <td>IP 与历史账号、设备其他信号不一致</td>
+  <td>遵守平台使用条款，恢复长期一致的网络</td>
+</tr>
+<tr>
+  <td>打印机/本地 NAS 不通</td>
+  <td>TUN、路由或 DNS 影响局域网</td>
+  <td>检查本地网段策略及回退状态</td>
+</tr>
+</tbody>
+</table>
+<h2>不建议做的事</h2>
+<p>不下载所谓“绿色破解版”、不运行无人审查的远程配置脚本、不安装自签未知证书、不按陌生教程永久关闭杀毒或系统安全功能。<strong>客户端越复杂，排障面越广</strong>；如果已有更简单的受支持方案可以满足需求，就不必堆协议。</p>
+</section>
+<section class="chapter" id="chapter-14" data-search="13｜做业务的人：网络连接与商业账号必须分开管理"><div class="chapter-index">14 / 36</div><h1>13｜做业务的人：网络连接与商业账号必须分开管理</h1>
+<p><strong>本章结果：</strong>降低因网络切换、共享出口、设备权限和日志泄露带来的业务连续性问题。</p>
+<h2>1. 三层隔离</h2>
+<p><strong>网络层</strong>：业务用途使用符合公司政策且来源可靠的接入方式，记录维护方与备用方案。避免把关键业务完全押在单个未经实测的个人节点上。</p>
+<p><strong>设备层</strong>：生产账号与实验客户端尽量不要共享管理员权限；测试新客户端前先做系统备份和安全审查。公司管理设备优先遵守 MDM/IT 政策。</p>
+<p><strong>账号层</strong>：每个重要账号独立强密码 + MFA/通行密钥 + 恢复码；不要把登录地区伪装当成账号安全手段，避免违反服务商条款。</p>
+<h2>2. 最低风险配置</h2>
+<ul>
+<li>针对目标业务服务，确认官方对访问地区、支付主体、服务可用性的要求。</li>
+<li>客户敏感资料、源代码、token/API key 不通过不明服务商转发。</li>
+<li>测试连接时使用非敏感演示数据，不使用客户生产环境。</li>
+<li>若运营 X、YouTube、GitHub 等多个账号，账号归属、税务和平台资格独立管理；不能推定拥有海外 IP 就拥有海外付款、变现或账号资格。</li>
+<li>做内容、直播、远程咨询时留备用网络与离线资料，避免单点故障。</li>
+</ul>
+<h2>3. 一张事故处理卡</h2>
+<p><strong>发生意外登录/账号锁定时：</strong>先确认是不是官方安全警报；不要点击私信里的解封链接；通过官网更改密码、检查活跃会话、复核 MFA，按平台正式申诉流程处理。若涉及 API token 泄露，先吊销/轮换再排查费用与审计日志。</p>
+<p><strong>完成凭证：</strong>为你最重要的 3 个业务账号记录“官方恢复入口、MFA 方式、恢复码离线位置、事故联系人”，但<strong>不要在此仓库公开真实内容</strong>。</p>
+<h2>企业采购与审批</h2>
+<p>如果你是以企业主体运营海外业务，进一步阅读 <a href="#chapter-19">企业跨境办公方案</a>。不要把出口 IP 属性误认为平台账号资格、支付资格或所在国家的合法经营身份。</p>
+</section>
+<section class="chapter" id="chapter-15" data-search="14｜12 种海外网络接入模式：先看全景，再动手"><div class="chapter-index">15 / 36</div><h1>14｜12 种海外网络接入模式：先看全景，再动手</h1>
+<p><strong>本章结果：</strong>用一张表选出 1 个主用候选、1 个不同失败域的备用候选；不会再把“节点”“VPN”“协议”“客户端”“落地 IP”当成同一个东西。</p>
+<h2>五层模型：分清你到底买了什么</h2>
+<ol>
+<li><strong>目标</strong>：海外网站、AI API、跨国会议、远程公司内网、匿名浏览或移动漫游。目标不同，合适方案不同。</li>
+<li><strong>接入介质</strong>：家庭宽带、移动数据、漫游数据、单位专线。解决设备从哪里接入网络。</li>
+<li><strong>隧道/代理协议</strong>：WireGuard、Shadowsocks、VLESS/REALITY、Hysteria 2、Trojan、OpenVPN 等。协议影响兼容性、性能和检测特征，不等于服务品质。</li>
+<li><strong>服务节点与出口</strong>：商业 VPN 服务器、第三方订阅、自建 VPS、国外家庭设备、运营商国际出口。决定数据实际经过谁。</li>
+<li><strong>客户端和路由</strong>：Outline、Amnezia、Clash Verge Rev、v2rayN、sing-box、Tailscale，以及规则/系统代理/TUN。客户端是管理工具，不自动提供可用网络。</li>
+</ol>
+<h2>12 种路径横向对比</h2>
+<table>
+<thead>
+<tr>
+  <th>模式</th>
+  <th>谁提供出口</th>
+  <th>零基础门槛</th>
+  <th>最大收益</th>
+  <th>最需要警惕</th>
+  <th>实际验证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>① 企业批准的跨境专线/SD-WAN/SASE</td>
+  <td>持资质服务方</td>
+  <td>需企业采购</td>
+  <td>SLA、身份和审计</td>
+  <td>合同范围、成本、跨境数据合规</td>
+  <td>合同+演练</td>
+</tr>
+<tr>
+  <td>② 商业 VPN App</td>
+  <td>商业运营商</td>
+  <td>低</td>
+  <td>安装简便</td>
+  <td>中国适配不可预测、日志声明</td>
+  <td>按设备、运营商试用</td>
+</tr>
+<tr>
+  <td>③ 第三方订阅/“机场”</td>
+  <td>第三方中转和落地</td>
+  <td>中</td>
+  <td>多出口、规则客户端</td>
+  <td>服务商未知、跑路、配置含恶意规则</td>
+  <td>小额试用、安全审查</td>
+</tr>
+<tr>
+  <td>④ 自建 Outline/Shadowsocks</td>
+  <td>自有 VPS</td>
+  <td>中</td>
+  <td>独立密钥和控制</td>
+  <td>服务器暴露、兼容性、运维</td>
+  <td>官方文档+实测</td>
+</tr>
+<tr>
+  <td>⑤ 自建 AmneziaWG</td>
+  <td>自有 VPS</td>
+  <td>中</td>
+  <td>图形化管理、协议特征调整</td>
+  <td>UDP 条件、版本差异</td>
+  <td>官方自建说明+实测</td>
+</tr>
+<tr>
+  <td>⑥ 自建 Xray/VLESS/REALITY</td>
+  <td>自有 VPS</td>
+  <td>高</td>
+  <td>灵活细分路由</td>
+  <td>参数多、TLS 错误、证书/日志风险</td>
+  <td>使用官方实例+实测</td>
+</tr>
+<tr>
+  <td>⑦ 自建 Hysteria 2 / TUIC</td>
+  <td>自有 VPS</td>
+  <td>高</td>
+  <td>UDP/QUIC 环境下可考虑</td>
+  <td>UDP 限制、端口/防火墙、兼容性</td>
+  <td>网络条件 A/B 测试</td>
+</tr>
+<tr>
+  <td>⑧ WireGuard/OpenVPN/IKEv2</td>
+  <td>企业网关/自有服务器</td>
+  <td>中</td>
+  <td>标准 VPN，适合授权内网</td>
+  <td>不能推断抗阻断能力</td>
+  <td>官方客户端+连通性</td>
+</tr>
+<tr>
+  <td>⑨ Tailscale/ZeroTier + 出口节点</td>
+  <td>自有境外设备</td>
+  <td>中</td>
+  <td>私有组网、远端出口</td>
+  <td>中继路径、节点离线、ACL</td>
+  <td>设备和出口分别验收</td>
+</tr>
+<tr>
+  <td>⑩ 境外 SIM / eSIM / 国际漫游</td>
+  <td>合同运营商</td>
+  <td>中</td>
+  <td>适合短期移动需求</td>
+  <td>设备支持、实际漫游出口、流量资费</td>
+  <td>先确认运营商路由</td>
+</tr>
+<tr>
+  <td>⑪ 境外远程桌面/云工作站</td>
+  <td>远端电脑或云</td>
+  <td>中</td>
+  <td>只传画面，工作环境固定</td>
+  <td>键盘输入、账户、文件和合规</td>
+  <td>应用内验收</td>
+</tr>
+<tr>
+  <td>⑫ Tor Browser / 网桥</td>
+  <td>Tor 网络</td>
+  <td>中</td>
+  <td>隐私需求及研究</td>
+  <td>带宽与目标站封锁、非通用工作网络</td>
+  <td>官方桥接指引</td>
+</tr>
+</tbody>
+</table>
+<p><strong>不应混入以上 12 类作为“万能解决方案”的工具：</strong>DNS-over-HTTPS（仅处理解析/隐私的一部分）、Smart DNS（不能提供端到端加密代理）、Cloudflare WARP（不提供可指定国家的出口身份）、指纹浏览器（只改变部分浏览器环境）、CDN（给网站加速，不是任意客户端全网访问）、免费公共 SOCKS（无法信任）。</p>
+<h2>对选择题做一次删减</h2>
+<ul>
+<li><strong>工作含客户/公司数据</strong>：优先让 IT/合规批准企业接入；不经批准不要试验第三方代理。</li>
+<li><strong>旅行/短期、手机为主</strong>：先检查设备的 SIM/eSIM 兼容性、运营商漫游协议和真实路由；再评估正规的服务方案。</li>
+<li><strong>一般浏览，愿意承担服务商风险</strong>：商业服务可以小额、短周期验证；拒绝“永久稳定”承诺。</li>
+<li><strong>技术用户、有 VPS</strong>：先按第 02、03 章完成隔离测试，再根据协议专章选择是否扩展。</li>
+<li><strong>已有海外电脑/远程任务</strong>：可以评估远程工作站；它不是对本地所有 App 的网络改造。</li>
+</ul>
+<p><strong>交付物：</strong>填写 <a href="templates/方案取舍卡.md">方案取舍卡</a>。</p>
+<p><strong>来源：</strong><a href="https://tailscale.com/docs/features/exit-nodes">Tailscale 出口节点</a> · <a href="https://docs.amnezia.org/documentation/instructions/install-vpn-on-server/">Amnezia 自建</a> · <a href="https://hysteria.network/">Hysteria 官方</a> · <a href="https://developers.cloudflare.com/warp-client/warp-modes/">Cloudflare WARP 限制</a>。</p>
+</section>
+<section class="chapter" id="chapter-16" data-search="15｜商业 VPN 与“机场订阅”：挑选、导入、试用、退出"><div class="chapter-index">16 / 36</div><h1>15｜商业 VPN 与“机场订阅”：挑选、导入、试用、退出</h1>
+<p><strong>本章结果：</strong>能在不购买年费、不泄露账号和密钥的前提下，评估第三方服务是不是适合自己。此处不推荐商家、不发订阅、不收返佣。</p>
+<h2>先厘清差别</h2>
+<p><strong>商业 VPN</strong>：服务商一般提供自有 App、账号、线路、售后；无需你理解代理格式。<strong>第三方订阅/机场</strong>：服务商提供订阅链接或配置，常需要另装 Clash/Mihomo、sing-box、v2rayN 等客户端。部分宣传“专线”“IEPL/IPLC”“原生住宅 IP”缺少可核验证明，名字不等于物理拓扑或法律资质。</p>
+<h2>可以照着执行的 9 步</h2>
+<ol>
+<li><strong>用途筛选</strong>：列出必须用的真实服务（例如学术检索、代码仓库、视频会议），含公司数据则先走批准流程。</li>
+<li><strong>主体核验</strong>：服务方是否能证明运营主体、隐私政策、客服、退款规则？无法核验就提高风险等级。</li>
+<li><strong>最低付费暴露</strong>：仅购买必要的短周期方案；虚拟币不可逆付款没有天然保障。</li>
+<li><strong>来源核验</strong>：软件只从产品官方站点或维护者的 Releases 下载；输入账号前检查域名、签名和系统权限。</li>
+<li><strong>检查订阅权限</strong>：订阅 URL 常含令牌。不要发给朋友、截图到群、放进 GitHub 或交给陌生“测速网站”。</li>
+<li><strong>导入前做备份</strong>：导出原规则/代理状态（脱敏、加密保管），先用低风险测试设备连接。</li>
+<li><strong>真实工作测试</strong>：同一设备，分别在 08:00、14:00、21:00，家庭宽带和移动热点测试应用层成功率；不要只看延迟灯。</li>
+<li><strong>风险试验</strong>：断开连接，检查系统代理、DNS、VPN 权限是否恢复；测试局域网设备、工作软件有无异常。</li>
+<li><strong>设退出条件</strong>：可用率低于自定目标、售后不响应、发生证书劫持或未经授权数据采集，即撤回授权并停用。</li>
+</ol>
+<h2>明确的红旗</h2>
+<ul>
+<li>要求安装根证书、关闭 macOS Gatekeeper/Windows Defender，或提供 Apple ID 验证码。</li>
+<li>分享给你的应用安装包与官方发布者不同；要求 root/远程桌面权限且无法解释理由。</li>
+<li>宣称“永不封”“100% 隐身”“支持所有平台永不风控”。</li>
+<li>冒充官方服务；托管仓库只有推广码、没有可复核部署和更新记录。</li>
+<li>要你为“检测纯净度”上传真实订阅链接；诱导你购买“专用国籍/IP”以绕过平台资格审核。</li>
+</ul>
+<h2>拓扑声明怎样验证</h2>
+<p>“专线”应有可核查的合同与服务说明，测速图不能证明它有运营商专线资源；“住宅 IP”是 IP 属性库标签，不能证明合法来源、独占或平台不会识别异常。多节点也可能属于<strong>同一家云服务商和同一个上游</strong>。</p>
+<p><strong>X/社区经验不能代替本地测试。</strong>详见 <a href="RESEARCH_LOG.md">调研证据台账</a>，以及 <a href="templates/网络方案观察表.csv">网络方案观察表</a>。</p>
+</section>
+<section class="chapter" id="chapter-17" data-search="16｜VLESS/REALITY、Hysteria 2、Trojan、Shadowsocks：怎么选"><div class="chapter-index">17 / 36</div><h1>16｜VLESS/REALITY、Hysteria 2、Trojan、Shadowsocks：怎么选</h1>
+<p><strong>本章结果：</strong>看懂协议差异，在不瞎装“一键脚本”的情况下完成前置条件核查和小规模验收。</p>
+<h2>一分钟搞清楚</h2>
+<table>
+<thead>
+<tr>
+  <th>类别</th>
+  <th>传输特点</th>
+  <th>前置条件与约束</th>
+  <th>优先排查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Shadowsocks（含 Outline）</td>
+  <td>加密代理，生态成熟</td>
+  <td>选择维护中的实现与受支持密码套件</td>
+  <td>客户端/服务端版本、端口、探测</td>
+</tr>
+<tr>
+  <td>VLESS + Xray/REALITY</td>
+  <td>Xray 生态，TLS 特征相关选项丰富</td>
+  <td>配置更复杂；必须核查最新官方示例</td>
+  <td>客户端兼容、时间同步、目标服务和证书设置</td>
+</tr>
+<tr>
+  <td>Hysteria 2</td>
+  <td>基于 QUIC/UDP 的代理</td>
+  <td>UDP 通路、TLS 和认证配置</td>
+  <td>UDP 受限、运营商路径、丢包、MTU</td>
+</tr>
+<tr>
+  <td>TUIC</td>
+  <td>基于 QUIC/UDP 的生态协议</td>
+  <td>版本与客户端实现兼容性差异</td>
+  <td>握手与 UDP 可达性</td>
+</tr>
+<tr>
+  <td>Trojan</td>
+  <td>TLS 相关代理方案</td>
+  <td>必须正确验证 TLS 配置及服务端身份</td>
+  <td>证书、域名、SNI、版本</td>
+</tr>
+<tr>
+  <td>WireGuard/AmneziaWG</td>
+  <td>UDP VPN / 衍生混淆协议</td>
+  <td>自建和出口地址可达；版本匹配</td>
+  <td>系统路由、UDP、设备密钥</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>这是<strong>设计特性对照</strong>，并非“某协议在国内成功率排名”。任何协议都不能自动赋予合法性、安全性和稳定性。</p>
+</blockquote>
+<h2>先做服务器前置检查（只读、安全）</h2>
+<ol>
+<li>目标机器是<strong>你拥有/获授权</strong>的测试 VPS，最好为空白实例；有快照和控制台救援。</li>
+<li>明确操作系统版本、维护周期、防火墙、安全组、磁盘/带宽额度；分别记录 IPv4、IPv6 是否有可达路由。</li>
+<li>检查已有监听端口 <code>sudo ss -lntup</code>，不要抢占生产服务。</li>
+<li>检查系统时钟 <code>timedatectl status</code>、TLS 证书到期、域名控制权（若协议部署确需）。</li>
+<li>只通过官方项目安装手册选择版本；避免直接执行第三方匿名脚本。</li>
+<li>客户端先连测试账号/测试服务，保留回滚信息；再按自己的工作时段采样至少 7 天。</li>
+</ol>
+<h2>Xray / VLESS / REALITY：按官方文档实施</h2>
+<p>进入 <a href="https://github.com/XTLS/Xray-core">XTLS/Xray-core</a> → README → Xray-examples / REALITY 官方文档。不要从社交帖子盲抄证书字段、伪装域名、私钥。任何配置教程如果要求 <code>allowInsecure=true</code> 或跳过 TLS 验证，都要先确认版本和安全影响；<strong>默认拒绝关闭证书校验</strong>。各 GUI 面板常为第三方软件，额外扩大攻击面。</p>
+<p><strong>验收节点</strong>：客户端服务端版本兼容；TLS 握手成功；目标 HTTPS 真实打开；在 4G/5G 与家宽都测试；断开后恢复原网络；不出现异常新证书。失败就分类，不循环更换配置碰运气。</p>
+<h2>Hysteria 2：UDP 是关键变量</h2>
+<p>进入 <a href="https://hysteria.network/">Hysteria 官方首页</a> → Server / Client。确认服务端可接收所需 UDP，云服务商网络 ACL 不阻断；证书由可信 CA 正确签发且客户端验证开启。可以按官方教程部署到非生产 VPS，不要将带密码的配置发给任何人。不要因为“QUIC 更快”就推导出所有运营商更稳；UDP 可能受限或拥塞。</p>
+<h2>不建议给新手的 4 件事</h2>
+<ul>
+<li>未经审核把 3X-UI/其他面板暴露到公网，同时使用弱密码。</li>
+<li>抄写过时的 VLESS / Trojan 密钥示例到公开仓库。</li>
+<li>用真正业务账号验证陌生安装脚本。</li>
+<li>把多种协议堆到同一个 VPS 并宣布获得“冗余”，因为机器和 IP 仍是单点。</li>
+</ul>
+<p><strong>输出</strong>：填好 <a href="templates/协议部署验收卡.md">协议部署验收卡</a>，不能提供任意一个客观证据的结论标为“未验证”。</p>
+</section>
+<section class="chapter" id="chapter-18" data-search="17｜境外 SIM、eSIM、国际漫游：有时不用安装 VPN"><div class="chapter-index">18 / 36</div><h1>17｜境外 SIM、eSIM、国际漫游：有时不用安装 VPN</h1>
+<p><strong>本章结果：</strong>确认设备兼容性、服务范围、套餐成本、真实出口与安全责任，避免买完 eSIM 才发现手机无法安装。</p>
+<h2>三种容易混淆的产品</h2>
+<ul>
+<li><strong>境外实体 SIM</strong>：卡的发行方与漫游协议决定网络能力。卡来自境外不表示在中国大陆必然有可用的漫游数据。</li>
+<li><strong>旅游 eSIM</strong>：一种远程写入 SIM 描述文件的方式。不同服务商使用不同的漫游合作伙伴与数据路由；所谓“能访问海外网站”必须用目标服务实测。</li>
+<li><strong>大陆手机卡国际漫游</strong>：通常是本地卡<strong>人在境外</strong>使用；不能简单等同于“人在境内、通过境外出口上网”。</li>
+</ul>
+<h2>按顺序做（先核验，再付款）</h2>
+<ol>
+<li><strong>确认硬件</strong>：<code>设置 → 通用 → 关于本机</code> 获取具体机型与型号；Android 查询厂商官方支持列表。大陆购买的 iPhone 与海外版支持情况、运营商 eSIM 描述文件支持情况可能不同。</li>
+<li><strong>确认场景</strong>：套餐能否在中国大陆漫入指定运营商？有无公平使用政策（FUP）、限速、热点限制？</li>
+<li><strong>确认出口</strong>：明确询问服务商“数据出口国家、路由归属、DNS/IPv6、IP 类型”，只把售前答复当假设。</li>
+<li><strong>确认费用</strong>：按预估工作流量计算总成本，而非只比较每天的标价；注意自动续费和有效期起算时间。</li>
+<li><strong>备份网络</strong>：保留主号码、短信与 MFA 通道；不要在未经了解的前提下删除原有 eSIM 配置或停用主 SIM。</li>
+<li><strong>安装与测试</strong>：仅经官方 QR/运营商 App 安装，测试正常数据、热点共享、目标服务、DNS、IPv6 和紧急联系人可用性。</li>
+<li><strong>离线应急</strong>：保存不含敏感信息的购买凭证与客服联系渠道；流量不足时能迅速切回原运营商。</li>
+</ol>
+<h2>苹果支持的关键区别</h2>
+<p>苹果关于中国大陆的 eSIM 机型和运营商限制会持续调整，<strong>必须以 <a href="https://support.apple.com/zh-cn/123879">Apple 官方支持页面</a> 为准</strong>。该页面说的是“中国大陆运营商 eSIM 描述文件”的兼容范围，不应将其直接推断成“某机型绝对无法安装任何境外旅行 eSIM”。不同销售地区机型、硬件限制、激活策略都应核对。</p>
+<h2>5 个反例</h2>
+<ul>
+<li>eSIM 安装成功 ≠ 数据已连接；数据已连接 ≠ 目标站点可达。</li>
+<li>IP 检测显示“香港/美国” ≠ 平台会承认你居住当地。</li>
+<li>移动漫游可用 ≠ 可以替代多台电脑的固定办公网络。</li>
+<li>有流量不限量宣传 ≠ 高速流量不限量；注意 FUP 和热点共享条款。</li>
+<li>国外卡是实体卡 ≠ 合法合规风险为零；仍需核查运营商与所在地要求。</li>
+</ul>
+<p><strong>来源</strong>：<a href="https://support.apple.com/zh-cn/123879">Apple：中国大陆 eSIM 说明</a>、<a href="https://support.apple.com/zh-cn/109037">Apple 数据漫游说明</a>。</p>
+</section>
+<section class="chapter" id="chapter-19" data-search="18｜企业跨境办公：专线、SD-WAN、SASE 与远程桌面"><div class="chapter-index">19 / 36</div><h1>18｜企业跨境办公：专线、SD-WAN、SASE 与远程桌面</h1>
+<p><strong>本章结果：</strong>能写出一份可供公司 IT / 法务 / 采购评审的跨境接入需求，不把个人 VPS 当成企业跨境专线使用。</p>
+<h2>企业网络选型从“业务对象”开始</h2>
+<table>
+<thead>
+<tr>
+  <th>业务需求</th>
+  <th>优先探索</th>
+  <th>核查点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>企业员工访问海外内部系统</td>
+  <td>经审批的企业远程访问 / ZTNA / SASE</td>
+  <td>终端身份、MFA、最小权限、审计</td>
+</tr>
+<tr>
+  <td>海外分支和大陆办公点通信</td>
+  <td>持资质服务方提供的合规专线 / SD-WAN</td>
+  <td>电信服务资格、合同业务用途、SLA、数据流向</td>
+</tr>
+<tr>
+  <td>外贸、跨境会议、远程协作</td>
+  <td>经公司核准的应用与接入方案</td>
+  <td>会议音视频 QoS、地点/设备限制、故障响应</td>
+</tr>
+<tr>
+  <td>研发 API、生产服务互联</td>
+  <td>云厂商合规解决方案、区域化部署</td>
+  <td>数据跨境、日志、访问控制、云服务条款</td>
+</tr>
+<tr>
+  <td>单一海外工作软件</td>
+  <td>受管远程桌面 / VDI / Cloud PC</td>
+  <td>远端输入、文件传输、端点身份、成本</td>
+</tr>
+</tbody>
+</table>
+<p><strong>法规原始来源</strong>：<a href="https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2017/art_a940645e940946e1a62cd6c90a4e994e.html">工信部 2017 年《关于清理规范互联网网络接入服务市场的通知》</a> 对未经批准开展跨境经营活动、国际专线用途等作了要求。此处不将监管文件一句话推导为全部个人或企业场景的法律结论，涉及经营或客户数据须由专业人员核查。</p>
+<h2>采购前 10 个问题</h2>
+<ol>
+<li>谁是签约主体？由哪家电信运营商提供跨境资源？能否提供可核查资质？</li>
+<li>SLA 定义是什么：可用率、修复时限、赔付、排除条款？</li>
+<li>业务流量实际经哪些国家/区域？哪些系统可能处理账号、日志和客户数据？</li>
+<li>是否有身份认证、设备管理、最小权限、访问审计和应急断开？</li>
+<li>员工离职、设备丢失后，权限如何撤销？多长时间生效？</li>
+<li>如果线路断开，企业系统是否存在业务连续性预案？</li>
+<li>支持哪些操作系统、视频会议、SSH/CI/CD、内网域名和 MDM？</li>
+<li>税费、带宽、跨区流量、超额、一次性部署及提前解约费用是什么？</li>
+<li>政策变更、服务区域变更谁通知、谁承担迁移？</li>
+<li>发生网络安全事故时如何联动？有没有日志保留和通报规则？</li>
+</ol>
+<h2>远程桌面并非透明 VPN</h2>
+<p>远程桌面（如部署在公司许可环境中的 VDI 或远端云电脑）是<strong>把应用运行在远端，设备传输键鼠/画面</strong>。它不自动让本地 App、Mac 提词器、iPhone 客户端走海外出口。还要审计剪贴板、文件传输、远端摄像头、支付和账号登录位置。</p>
+<p><strong>交付物</strong>：填写 <a href="templates/企业跨境接入需求表.md">企业跨境接入需求表</a>，未经审批不直接部署在生产机。</p>
+</section>
+<section class="chapter" id="chapter-20" data-search="19｜Tailscale、WireGuard、ZeroTier、海外家庭出口与云工作站"><div class="chapter-index">20 / 36</div><h1>19｜Tailscale、WireGuard、ZeroTier、海外家庭出口与云工作站</h1>
+<p><strong>本章结果：</strong>知道“组网”与“所有互联网流量经境外出口”之间的差别，并能在被授权的自有设备上做出口节点实验。</p>
+<h2>概念分层</h2>
+<ul>
+<li><strong>私有组网</strong>：连接自己的手机、Mac、NAS、服务器，使设备彼此可达；默认不一定改变公网出口。</li>
+<li><strong>Exit Node / 出口节点</strong>：指定某台被允许的设备转发外网请求；它离线或缺少权限就会失败。</li>
+<li><strong>远程桌面</strong>：人在本地操作远端计算机。本地程序仍在本地网络运行。</li>
+</ul>
+<h2>Tailscale 出口节点：官方操作路径</h2>
+<ol>
+<li>确认两台设备<strong>均属于你或已获授权</strong>，并安装 <a href="https://tailscale.com/download">Tailscale 官方客户端</a>。</li>
+<li>在境外且有联网许可的设备上登录同一受控 tailnet，按照官方 <a href="https://tailscale.com/docs/features/exit-nodes">Exit Node 文档</a> 广告它可以作为出口节点。</li>
+<li>由管理员在管理控制台批准节点及使用权限（自定义 ACL 时注意 <code>autogroup:internet</code>）。</li>
+<li>在客户端显式选择该出口节点；如果需要本地打印机/NAS，检查“允许访问局域网”。</li>
+<li>访问你有权访问的测试网站，检查公网出口是否符合预期；再测试断开与退出后的网络恢复。</li>
+<li>记录海外设备开机、电源、密钥到期、出口 IP、运营商和备份设备。<strong>不要把它描述成“中国网络必通”</strong>。</li>
+</ol>
+<p>官方强调：默认 Tailscale 仅承担组网；使用 Exit Node 需要设备、管理员、客户端分别启用。任何一环缺失时，不能宣称全局出口已生效。</p>
+<h2>原生 WireGuard / OpenVPN / IKEv2</h2>
+<p>这些标准 VPN 适合<strong>允许的远程接入/内网组网</strong>，在受限制网络上是否可达取决于传输特征和网络条件；仅因其“加密强”不能推断抗阻断能力强。先做合法用途、目标端口、路由、MTU、DNS、权限和密钥轮换的验收。</p>
+<h2>海外住宅宽带出口需要额外谨慎</h2>
+<ul>
+<li>“住宅 IP”并不天然可靠：家庭设备可能离线、动态 IP 变更、上行带宽低、电力中断。</li>
+<li>禁止利用未经他人知情同意的设备作为中继；不要向陌生人购买所谓“他人住宅出口”访问权。</li>
+<li>家人共用出口时，明确访问控制与日志保留边界，避免设备横向访问。</li>
+</ul>
+<p><strong>输出</strong>：一张「终端 → 隧道 → 出口 → 目标应用」拓扑图，以及主节点宕机后的恢复方法。</p>
+</section>
+<section class="chapter" id="chapter-21" data-search="20｜Tor、WARP、Smart DNS、指纹浏览器：哪些能解决，哪些不能"><div class="chapter-index">21 / 36</div><h1>20｜Tor、WARP、Smart DNS、指纹浏览器：哪些能解决，哪些不能</h1>
+<p><strong>本章结果：</strong>面对“免费一键翻墙”“DNS 解锁全网”“指纹浏览器就能变美国用户”等宣传时能识别边界。</p>
+<h2>把工具放对位置</h2>
+<table>
+<thead>
+<tr>
+  <th>工具</th>
+  <th>主要功能</th>
+  <th>不应该宣称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Tor Browser + Bridges</td>
+  <td>具有隐私目标的浏览与抗审查连接方式</td>
+  <td>高速、稳定、适合所有 APP</td>
+</tr>
+<tr>
+  <td>Cloudflare WARP</td>
+  <td>保护客户端网络路径与 DNS（取决于模式）</td>
+  <td>让用户自行选择任意国家出口或提供匿名身份</td>
+</tr>
+<tr>
+  <td>DoH / DoT</td>
+  <td>加密 DNS 查询的一部分</td>
+  <td>一开就能访问所有海外服务</td>
+</tr>
+<tr>
+  <td>Smart DNS</td>
+  <td>特定场景的域名解析/路由替代</td>
+  <td>完整加密代理、防窃听</td>
+</tr>
+<tr>
+  <td>指纹浏览器</td>
+  <td>隔离配置文件/部分浏览器指纹</td>
+  <td>替代真实网络出口、账号归属或平台规则</td>
+</tr>
+<tr>
+  <td>Cloudflare CDN</td>
+  <td>为网站提供边缘加速与代理</td>
+  <td>自动为任意客户端提供海外上网隧道</td>
+</tr>
+</tbody>
+</table>
+<h2>Tor Browser：按官方指引</h2>
+<ol>
+<li>从 <a href="https://www.torproject.org/">Tor Project</a> 取得适合自己系统的 Tor Browser，确保安装包可信。</li>
+<li>在设置中查找 <strong>Connection → Bridges</strong>；若所在网络无法直连，参考官方 <a href="https://support.torproject.org/tor-browser/circumvention/using-bridges/">使用网桥</a> 说明。</li>
+<li>使用专门的测试站点确认 Tor 浏览器本身正常工作；<strong>不要因此假设其他 App 也走 Tor</strong>。</li>
+<li>重要账号登录要理解 Tor 出口变化可能触发风控；涉及支付、法律/职业身份时遵守服务条款。</li>
+</ol>
+<p>Tor 网桥提供绕过封锁的连接选项，但可用性、吞吐量和服务网站对 Tor 出口的限制不能保证。隐私威胁模型参阅 Tor 官方手册。</p>
+<h2>WARP 的官方说法</h2>
+<p>Cloudflare 官方明确指出 WARP <strong>不提供匿名性，也不能用它假装从另一个国家上网</strong>。参阅 <a href="https://developers.cloudflare.com/warp-client/warp-modes/">WARP modes</a>。它适合某些网络安全/隐私场景；不能当成任意地理位置代理。</p>
+<h2>浏览器与 APP 的网络是两回事</h2>
+<p>指纹浏览器影响网站通过浏览器可观察的部分参数，<strong>不会自动决定操作系统、非浏览器应用、运营商 SIM、真实地理定位或支付身份</strong>。为了让平台认为你在某个国家而虚构个人身份信息，存在服务条款和安全风险。</p>
+<p><strong>输出</strong>：删掉方案表里所有通过名字暗示“万能”的工具，记下该工具解决的是哪一层。</p>
+</section>
+<section class="chapter" id="chapter-22" data-search="21｜五分钟场景化排障：按现象定位，不盲目换节点"><div class="chapter-index">22 / 36</div><h1>21｜五分钟场景化排障：按现象定位，不盲目换节点</h1>
+<p><strong>本章结果：</strong>故障发生后，5 分钟内把问题归入一个可操作的范围；严重故障先回退。</p>
+<h2>第零关：不要让诊断造成更大损失</h2>
+<p>停止在生产设备上反复安装未知软件；不要公开全量日志/订阅密钥。先保存异常时间、网络、操作系统、软件版本和最后一次正常工作时间。</p>
+<h2>决策树</h2>
+<pre><code class="language-mermaid">flowchart TD
+ A[打不开目标服务] --&gt; B{关闭连接后普通网站是否正常}
+ B --&gt;|否| C[先查本地网络/宽带/路由器]
+ B --&gt;|是| D{隧道握手/状态是否成功}
+ D --&gt;|否| E[核查凭据/服务端/链路/端口/时钟]
+ D --&gt;|是| F{其他设备同一出口能用吗}
+ F --&gt;|能| G[本机代理/TUN/DNS/权限/进程]
+ F --&gt;|不能| H[服务端负载/上游/目标站/出口信誉]
+ G --&gt; I[核查特定APP的路由与分流]
+ H --&gt; J[多网络/分时段复验]
+</code></pre>
+<h2>8 个场景的优先级</h2>
+<table>
+<thead>
+<tr>
+  <th>症状</th>
+  <th>第一检查项</th>
+  <th>第二检查项</th>
+  <th>不要马上做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>已连接但没有流量</td>
+  <td>是否有路由及 DNS；应用是否走该隧道</td>
+  <td>VPS/出口的上游可用性</td>
+  <td>换一套随机教程</td>
+</tr>
+<tr>
+  <td>只在晚上变慢</td>
+  <td>家宽与手机热点 A/B、p95 延迟、时段</td>
+  <td>运营商拥塞/服务商容量</td>
+  <td>说“某国节点永远最快”</td>
+</tr>
+<tr>
+  <td>Git 能用、浏览器不能</td>
+  <td>浏览器代理/DNS/安全插件</td>
+  <td>证书链、本机时间</td>
+  <td>关掉 TLS 证书校验</td>
+</tr>
+<tr>
+  <td>浏览器能用、终端 CLI 不能</td>
+  <td>shell <code>HTTPS_PROXY</code>/应用自己的代理</td>
+  <td>TUN 作用范围</td>
+  <td>给未知工具管理员权限</td>
+</tr>
+<tr>
+  <td>Wi-Fi 行、5G 不行</td>
+  <td>网络接入对照、UDP 支持、IPv6</td>
+  <td>热点与不同运营商</td>
+  <td>直接判定服务器被封</td>
+</tr>
+<tr>
+  <td>一开 TUN 内网/NAS 不通</td>
+  <td>本地网段路由、Allow LAN</td>
+  <td>DNS split horizon</td>
+  <td>永久关闭安全防护</td>
+</tr>
+<tr>
+  <td>iPhone 没有下载入口</td>
+  <td>App 所在地区、系统版本、产品官方发行渠道</td>
+  <td>设备区域政策</td>
+  <td>向陌生人交 Apple ID</td>
+</tr>
+<tr>
+  <td>AI 平台登录风控</td>
+  <td>账号真实注册条件、异常登录通知</td>
+  <td>稳定的授权网络和 MFA</td>
+  <td>伪造身份或绕过审核</td>
+</tr>
+</tbody>
+</table>
+<h2>排障卡记录格式</h2>
+<p><strong>时间</strong>：YYYY-MM-DD HH:MM，北京时间。<strong>设备</strong>：Mac M 系列/macOS 版本。<strong>接入</strong>：家宽/移动热点（不写住址）。<strong>现象</strong>：隧道握手成功，但目标 HTTPS 超时。<strong>对照实验</strong>：关闭 TUN 能恢复普通网络；手机热点与家宽不同。<strong>最小变更</strong>：只改一个参数。<strong>结论等级</strong>：已复现/高度怀疑/未确认。<strong>回退</strong>：如何复原。</p>
+<p><strong>完成标准</strong>：证据足够定位失败层级，或按回滚卡恢复业务后再查；不必每次都当场修复根因。</p>
+</section>
+<section class="chapter" id="chapter-23" data-search="22｜7 天稳定性 SLO：从“能用”变成工程验收"><div class="chapter-index">23 / 36</div><h1>22｜7 天稳定性 SLO：从“能用”变成工程验收</h1>
+<p><strong>本章结果：</strong>得到一份可复核的测量表，知道“稳定”是否适合你的业务场景。</p>
+<h2>定义三个层级</h2>
+<ul>
+<li><strong>L0 连接建立</strong>：连接/握手成功，并能得到预期路由。</li>
+<li><strong>L1 真实任务</strong>：目标服务能够在合理时限内执行，例如完成一次合法的 API 测试、Git 拉取或会议连接。</li>
+<li><strong>L2 业务不中断</strong>：主用失败后，切换到备用方案恢复核心任务，并能回退到正常网络。</li>
+</ul>
+<h2>对所有网络方法一视同仁</h2>
+<p>在 <strong>3 种时段 × 7 天 × 2 种接入网络</strong> 记录 42 个测试点。分开统计家庭宽带和手机热点；仅在适用时测试 eSIM/漫游。每次都记录：连接成功、目标应用成功、耗时、DNS/IPv6 状态、出口变化、故障原因、恢复时间。</p>
+<h3>推荐但非行业标准的个人 SLO 例子</h3>
+<ul>
+<li>核心任务成功率 ≥ 95%，测量分母完整报告，不能删掉失败样本。</li>
+<li>关键页面响应耗时 p95 ≤ 8 秒；会议/实时控制需要另外制定更严格标准。</li>
+<li>恢复时间 RTO ≤ 10 分钟；超过立即启动可控应急方案。</li>
+<li>主备至少应当有<strong>不同上游/服务商或接入介质</strong>，不能只有同 VPS 两个协议。</li>
+</ul>
+<h2>把“高峰不稳定”量化</h2>
+<p>如果下午 16:00—24:00 表现差，必须和非高峰时段分别统计；不能只报告夜间 02:00 的测速。无法取得完整样本时就写 <code>n&lt;42</code>（此处仅是示例规定，最终口径在附录中说明），不得写“全国可用率 99%”。</p>
+<h2>两次故障演练</h2>
+<ol>
+<li><strong>主出口不可用演练</strong>：人为断开授权的主用连接，记录备用方案上线时间与任务结果。</li>
+<li><strong>本机配置回滚演练</strong>：关闭 TUN/系统代理，确认微信、银行、内网/NAS、国内服务恢复正常。</li>
+</ol>
+<h2>失败后的选择</h2>
+<ul>
+<li>失败集中在同一<strong>接入网络</strong>：优先研究本地运营商/接入路径与 UDP/IPv6 差异。</li>
+<li>失败集中在同一<strong>服务商/服务器</strong>：优先审查上游和服务器资源。</li>
+<li>失败集中在同一<strong>目标应用</strong>：优先审查应用侧策略和 DNS/账号条件。</li>
+</ul>
+<p>所有推断都是待进一步验证的假设，变更一次只动一个因素。填写 42 行的 <a href="templates/七天测量表.csv">七天测量表</a> 后，可在项目根目录运行 <code>python3 tools/slo_report.py templates/七天测量表.csv</code>。脚本只统计明确填写 <code>0</code> 或 <code>1</code> 的记录，并按接入网络分组；空白不会被当作成功或失败。完成结果记录在 <a href="templates/七天测量表.csv">七天测量表</a> 和 <a href="templates/网络方案观察表.csv">网络方案观察表</a>。</p>
+</section>
+<section class="chapter" id="chapter-24" data-search="23｜对抗式审核：新手、工程师、安全官、事实核验员四方挑战"><div class="chapter-index">24 / 36</div><h1>23｜对抗式审核：新手、工程师、安全官、事实核验员四方挑战</h1>
+<p><strong>本章结果：</strong>让指南能够持续被证伪、修正和版本化，而不是靠热词和截图维持“永远稳定”的印象。</p>
+<h2>对抗角色 1：零基础用户</h2>
+<ul>
+<li><strong>挑战</strong>：只有手机、看不懂协议，可以仅靠教程完成一个合法授权配置的安装与撤销吗？</li>
+<li><strong>失败模式</strong>：把“装客户端”误认为“获得节点”；iPhone 不支持 eSIM 却先付费。</li>
+<li><strong>验收</strong>：新手能说清楚账户、服务端、配置、客户端四个对象；能在 10 分钟内找到对应的回滚说明。</li>
+</ul>
+<h2>对抗角色 2：网络工程师</h2>
+<ul>
+<li><strong>挑战</strong>：只测一台 Mac 和一个酒店 Wi-Fi，却声称适合中国全年吗？</li>
+<li><strong>失败模式</strong>：混淆连接成功率与业务成功率；数据缺少运营商、时段、样本量；两条主备共用同一上游。</li>
+<li><strong>验收</strong>：3 时段、2 网络、7 天的样本；至少一轮主备演练；不可实测条目必须标“待验证”。</li>
+</ul>
+<h2>对抗角色 3：安全审核员</h2>
+<ul>
+<li><strong>挑战</strong>：供应商如果作恶，哪里能读到你的数据？安装包会不会植入？订阅链接是否可被第三方盗用？</li>
+<li><strong>失败模式</strong>：禁用 TLS 校验、运行未知一键脚本、上传 <code>.conf</code>、截图泄漏服务器账号、将密码写进公开仓库。</li>
+<li><strong>验收</strong>：凭据分离、最小权限、来源核验、密钥轮换；自动扫描只是第一层，发布前人工复查。</li>
+</ul>
+<h2>对抗角色 4：合规/事实核验员</h2>
+<ul>
+<li><strong>挑战</strong>：是否把非经营性研究与未经许可的跨境经营混为一谈？是否把社区体验当作官方事实？</li>
+<li><strong>失败模式</strong>：未引用法规原文；没有区分套餐宣传、社区经验、实验报告；把第三方推广号的“稳定推荐”当作调研证据。</li>
+<li><strong>验收</strong>：高风险结论给出原始来源、核验日期和适用场景；无来源的评价只记录为假设。</li>
+</ul>
+<h2>审核总表（2026-10-12）</h2>
+<table>
+<thead>
+<tr>
+  <th>问题等级</th>
+  <th>发现</th>
+  <th>修复</th>
+  <th>残余风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>P0</td>
+  <td>公开包含服务器凭据会造成实际入侵风险</td>
+  <td>README、模板禁止真实密钥；脚本执行有限规则扫描</td>
+  <td>文件外的图片/历史提交需人工复核</td>
+</tr>
+<tr>
+  <td>P0</td>
+  <td>可能触犯跨境经营或数据合规要求</td>
+  <td>分开个人学习与企业服务，引用官方政策</td>
+  <td>不能替代针对性法律意见</td>
+</tr>
+<tr>
+  <td>P1</td>
+  <td>商业 VPN/机场/自建混淆</td>
+  <td>12 模式与五层模型</td>
+  <td>真实链路需供应商证据</td>
+</tr>
+<tr>
+  <td>P1</td>
+  <td>X 检索受限、营销信息污染</td>
+  <td>记录限制，社区材料低证据等级</td>
+  <td>不能得出 X 平台共识</td>
+</tr>
+<tr>
+  <td>P1</td>
+  <td>2026 版 Amnezia 协议与中国实际兼容性不等同</td>
+  <td>官方标注未专门测试中国</td>
+  <td>中国线路仍需现场验证</td>
+</tr>
+<tr>
+  <td>P1</td>
+  <td>eSIM 在大陆的设备兼容限制复杂</td>
+  <td>引 Apple 原始文档并给出型号核查步骤</td>
+  <td>境外旅游 eSIM 需另核查</td>
+</tr>
+<tr>
+  <td>P1</td>
+  <td>全局/TUN 给人“绝不会泄漏”的错觉</td>
+  <td>增加路由、DNS、IPv6、WebRTC 及回退实测</td>
+  <td>无法代替专业抓包审计</td>
+</tr>
+<tr>
+  <td>P2</td>
+  <td>单次测速伪装成长期稳定</td>
+  <td>42 个观测点与分层 SLO</td>
+  <td>样本量仍不足代表全年</td>
+</tr>
+<tr>
+  <td>P2</td>
+  <td>离线网页外链及跳转可能损坏</td>
+  <td>自动生成、相对链接检测、资源检查</td>
+  <td>浏览器兼容性需人工试用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>进一步任务清单</strong>：参见仓库根目录 <a href="AUDIT.md">AUDIT.md</a>。审稿人提出任何“百分百稳定”或“官方保底”结论，都应要求最小可复现实验与原始数据。</p>
+</section>
+<section class="chapter" id="chapter-25" data-search="24｜30 分钟启动：第一次正确使用，到每天稳定工作"><div class="chapter-index">25 / 36</div><h1>24｜30 分钟启动：第一次正确使用，到每天稳定工作</h1>
+<p><strong>适合谁：</strong>有授权网络接入方式，但不知道如何在设备上保持长期稳定的人。<strong>最终产出：</strong>一张网络档案、一份三任务验收记录、一个确实可用的回滚路径。时间是教学节奏，不构成性能保证。</p>
+<h2>先做决策：你需要哪种网络？</h2>
+<table>
+<thead>
+<tr>
+  <th>你想做的任务</th>
+  <th>优先思路</th>
+  <th>不要直接做的事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>国内银行、微信、地图、工作内网</td>
+  <td>原网络直连，尊重单位网络要求</td>
+  <td>不必要地把个人敏感流量交给代理</td>
+</tr>
+<tr>
+  <td>GitHub、官方文档、远程代码仓库</td>
+  <td>经授权的接入；验证浏览器和终端分别可用</td>
+  <td>只看 IP 就认为 Git/CLI 已可用</td>
+</tr>
+<tr>
+  <td>AI 网页和 API 开发</td>
+  <td>先核对目标服务地区资格，再测试网页、CLI、API</td>
+  <td>把可访问页面误认为有账号/API 使用资格</td>
+</tr>
+<tr>
+  <td>海外视频会议</td>
+  <td>优先可预测延迟、抖动、丢包；准备语音/电话备用</td>
+  <td>把大文件测速当会议质量</td>
+</tr>
+<tr>
+  <td>境外出差或跨境办公</td>
+  <td>企业批准的远程接入；漫游需核对运营商路径</td>
+  <td>假定“境外 eSIM = 所有 App 稳定”</td>
+</tr>
+<tr>
+  <td>企业客户、生产环境、财务</td>
+  <td>企业批准/管理的接入和审计方案</td>
+  <td>个人代理处理客户机密</td>
+</tr>
+</tbody>
+</table>
+<h2>第 0 步（3 分钟）：安全底线</h2>
+<ol>
+<li>明确个人/企业用途与使用权限；企业设备先看 IT 政策和采购要求（见 <a href="#chapter-19">18 章</a>）。</li>
+<li>从官方开发者/厂商来源安装客户端。记录发布页面和版本；不导入未知证书、不关闭证书校验。</li>
+<li>确认你有<strong>合法且明确授权</strong>的访问凭据；绝不把订阅、服务器私钥、面板地址提交给 GitHub 或 AI。</li>
+<li>保存现有工作网络设置截图，确认能关闭客户端、关闭系统代理、恢复原 DNS 和路由。</li>
+</ol>
+<h2>第 1 步（5 分钟）：建立网络档案</h2>
+<p>复制 <a href="templates/网络使用策略卡.md">网络使用策略卡</a>，只填写非敏感信息：主方案类型、备用方案类型、设备、用途、负责维护者、付费周期、失败时的默认行为。<strong>不要写真实服务器公网 IP、订阅 URL、用户名、Token。</strong></p>
+<p>推荐为三个场景分别建立档案：①家庭/办公室 Wi-Fi；②手机热点；③外出公共网络。每个环境单独验收，不互相推断。</p>
+<h2>第 2 步（7 分钟）：依次验证三件事</h2>
+<ol>
+<li><strong>基础联网：</strong>在不启动额外接入时，先打开一个正常可达的网站，确保设备本身在线。</li>
+<li><strong>实际路径：</strong>启用已授权的方案后，只访问你有权使用的目标服务，记录页面加载是否成功。必要时核验公开 IP 与 DNS 行为，但<strong>出口符合预期 ≠ 全流量安全 ≠ 账号地区资格</strong>。</li>
+<li><strong>应用级工作流：</strong>用一个低风险真实任务做验收。例如 GitHub 读公开仓库、下载官方文档、在获授权的 API 沙盒做一次低额度请求。不要用客户生产凭据做网络测试。</li>
+</ol>
+<p>验收时把“成功连接”“网页加载成功”“真正完成任务”分成三列。任一环节失败，就按 <a href="#chapter-34">33 章故障场景</a> 处理。</p>
+<h2>第 3 步（5 分钟）：设定分流与异常默认行为</h2>
+<p>默认从<strong>最小必要流量</strong>开始；需要更多应用时再扩大范围。常见三种模式：</p>
+<ul>
+<li><strong>模式 A：按需使用。</strong> 国内任务时关闭跨境接入，需要海外服务时再启动；最适合小白和低频使用。</li>
+<li><strong>模式 B：按目的地分流。</strong> 明确的内网、本地业务直连，允许的境外业务走指定出口；一定检查 DNS、IPv6 和应用内代理行为。</li>
+<li><strong>模式 C：企业全隧道。</strong> 按公司安全策略将网络统一经受管理的出口，适合审计需求，不应私自绕过公司安全组件。</li>
+</ul>
+<p><strong>特别注意</strong>：浏览器扩展代理通常不覆盖系统级应用；系统代理不一定覆盖所有 UDP 流量；TUN 会触及路由、DNS、局域网权限。切换模式前记录设置，切换后重新进行“三件事”测试。</p>
+<h2>第 4 步（5 分钟）：做真正的备用</h2>
+<p>关闭主方案，使用独立备用网络做同一低风险任务（不同上游或不同接入介质更有价值）。记录切换所需时间，确认旧网络设置正常恢复。<strong>没实际演练过的备用，等于还没有备用。</strong></p>
+<h2>第 5 步（5 分钟）：制定一天的使用节奏</h2>
+<table>
+<thead>
+<tr>
+  <th>时间节点</th>
+  <th>动作</th>
+  <th>检查证据</th>
+  <th>失败时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>开工前 3 分钟</td>
+  <td>检查网络、续费日期、目标任务</td>
+  <td>目标服务可完成低风险操作</td>
+  <td>换备用，不在登录关键账号时反复切换</td>
+</tr>
+<tr>
+  <td>开工中</td>
+  <td>长连接会议/上传时尽量不切换</td>
+  <td>会话不中断、工具无明显重试</td>
+  <td>停止敏感任务，优先恢复通讯</td>
+</tr>
+<tr>
+  <td>工作结束</td>
+  <td>退出非必要接入，关闭临时代理变量</td>
+  <td>国内服务与局域网恢复</td>
+  <td>执行回滚卡</td>
+</tr>
+<tr>
+  <td>每周 15 分钟</td>
+  <td>轮流测试主备，检查版本与密钥状态</td>
+  <td>7 天测量表、异常记录</td>
+  <td>暂停升级并保留已知可用配置</td>
+</tr>
+<tr>
+  <td>每月 30 分钟</td>
+  <td>核对账单、风险、供应商、备份</td>
+  <td>月度策略复盘表</td>
+  <td>淘汰高风险/低价值方案</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本章交付判断：</strong>不是“绿色已连接”，而是能完成任务、能在失败时改用备用、能安全退回原网络。</p>
+</section>
+<section class="chapter" id="chapter-26" data-search="25｜六种使用画像：把“默认设置”变成可复用策略"><div class="chapter-index">26 / 36</div><h1>25｜六种使用画像：把“默认设置”变成可复用策略</h1>
+<p>所有画像都是<strong>参考策略</strong>，不是可以直接粘贴进任何客户端的配置文件。界面名称、支持能力以当前软件及组织政策为准。先完成 <a href="#chapter-25">24 章</a> 再复制。</p>
+<h2>画像 A：普通用户——最低复杂度</h2>
+<ul>
+<li><strong>任务：</strong>查看文档、通讯、日常海外网站；非连续生产工作。</li>
+<li><strong>接入：</strong>一个来源清楚、经试用验收的授权方案 + 手机独立联网能力。</li>
+<li><strong>路由：</strong>以按需开关为主；尽量不全局常驻，不随意叠加多个 VPN。</li>
+<li><strong>验收：</strong>目标网站是否可打开；关闭后支付、地图、局域网是否正常。</li>
+<li><strong>恢复：</strong>第一步关额外接入、第二步恢复系统代理和 DNS、第三步核对本地网络。</li>
+<li><strong>避坑：</strong>安装了“客户端”并不等于已经取得网络接入服务。</li>
+</ul>
+<h2>画像 B：内容创作者——重上传与平台账号恢复</h2>
+<ul>
+<li><strong>任务：</strong>上传成片、发长文、访问素材、直播或连线。</li>
+<li><strong>策略：</strong>拍摄/剪辑尽量离线；上传、发布、结算分开操作。准备本地素材副本和发布草稿。</li>
+<li><strong>优先指标：</strong>目标平台实测上传成功率、持续上传吞吐、断点续传支持、故障恢复时间，而不是单次下载速度。</li>
+<li><strong>账号策略：</strong>登录设备、恢复邮箱、MFA 保持可恢复；只按真实身份、所在地和平台规则申请资格，不使用虚假的地区声明。</li>
+<li><strong>备用：</strong>预备经过批准的独立连接以及在断网时改日发布的应急方案。</li>
+<li><strong>反例：</strong>“测速很高，所以视频永远不掉线”是错误推断。</li>
+</ul>
+<h2>画像 C：开发者——网页、终端、容器三套路径</h2>
+<ul>
+<li><strong>任务：</strong>Git、官方模型 SDK、包管理器、Docker 镜像、IDE 插件、API 测试。</li>
+<li><strong>策略：</strong>明确浏览器、Shell 进程、IDE 子进程、Docker daemon/容器分别是否经代理；避免“一端成功意味着全部成功”。</li>
+<li><strong>路由：</strong>先用系统代理或经批准的应用内设置解决简单场景；有必要且有授权时再考虑 TUN；保留内网/本地地址正确处理。</li>
+<li><strong>验收：</strong>浏览器打开公开仓库；<code>git ls-remote</code>；包管理器访问公开索引；容器拉取一个公开镜像（视环境授权与资源情况）。</li>
+<li><strong>恢复：</strong>移除临时环境变量、撤销测试配置，验证国内网络与公司内网。</li>
+<li><strong>可执行操作：</strong>见 <a href="#chapter-27">26 章</a>。</li>
+</ul>
+<h2>画像 D：移动端重度用户——Wi-Fi 与蜂窝平滑切换</h2>
+<ul>
+<li><strong>任务：</strong>手机 App、消息、iPad 协作、热点共享、移动办公。</li>
+<li><strong>策略：</strong>每台设备单独验证；记录 Wi-Fi/蜂窝和热点三种模式，断开/锁屏/切网后复测。</li>
+<li><strong>路由：</strong>先看官方 App 是否支持按需连接；组织托管设备遵守 MDM/Per-App VPN 管理。</li>
+<li><strong>风险：</strong>eSIM 兼容与漫游出口是不同问题；App Store 地区、Apple ID、手机时区并不自动决定网络接入安全或服务资格。</li>
+<li><strong>操作：</strong>见 <a href="#chapter-28">27 章</a>。</li>
+</ul>
+<h2>画像 E：小团队——可观测和可交接</h2>
+<ul>
+<li><strong>任务：</strong>跨境会议、客户沟通、跨国协作。</li>
+<li><strong>优先：</strong>审批合规/客户数据处理/组织设备管理；业务联系人与网络负责人分开，定义回滚责任人。</li>
+<li><strong>主备：</strong>来自不同故障域的连接，不用同一家服务商的两个账号冒充独立备用。</li>
+<li><strong>日志：</strong>记录故障时间、影响、解决方案；不记录目标 URL 中的 token、Cookie 和生产数据。</li>
+<li><strong>演练：</strong>月度一次断主线路和账号恢复模拟；RTO 根据业务实测设定。</li>
+</ul>
+<h2>画像 F：隐私敏感 / 高风险工作——先做威胁模型</h2>
+<ul>
+<li><strong>任务：</strong>涉及研究、敏感沟通或高价值商业数据。</li>
+<li><strong>策略：</strong>先明确威胁来源、哪些元数据可被看到、服务商权限、终端是否可信；只用组织认可的受管理方案。</li>
+<li><strong>底线：</strong>不宣称 VPN、Tor 或“住宅 IP”能实现不可追踪；设备被恶意软件控制时，改变出口无法保护账号。</li>
+<li><strong>失败行为：</strong>关键任务原则上要求连接不满足安全条件时停止传输（fail closed）；其他低风险任务可选择回退直连（fail open）。分别写明，不能用一个全局开关含糊带过。</li>
+</ul>
+<h2>选错画像的三个信号</h2>
+<ol>
+<li>你每天调整十几次规则，且无法说明每次调整解决了什么问题——复杂度超过收益。</li>
+<li>你只会看测速，无法验证最重要的三项任务——指标与实际需求脱节。</li>
+<li>你在真实业务发生异常时仍直接操作服务器和账户配置——缺少回滚和变更冻结。</li>
+</ol>
+<p>用 <a href="templates/业务网络分层表.md">业务网络分层表</a> 写清楚“哪类应用走哪条经授权的路径、由谁负责、失败该做什么”。</p>
+</section>
+<section class="chapter" id="chapter-27" data-search="26｜开发者实战：Mac、Windows、终端、IDE 与 Docker"><div class="chapter-index">27 / 36</div><h1>26｜开发者实战：Mac、Windows、终端、IDE 与 Docker</h1>
+<p><strong>目标：</strong>彻底弄清“浏览器能用而 Git/Node/Python/Codex/IDE/Docker 不能用”的原因。以下命令主要用于诊断<strong>已授权的企业代理或本机受信任代理</strong>；端口为示例，必须替换为你自己在客户端确认的端口，不提供第三方连接凭据。</p>
+<h2>一、先画清五层</h2>
+<p><code>接入网络（Wi-Fi/蜂窝） → 操作系统路由 → DNS → 应用的代理配置 → 目标 HTTPS 服务</code></p>
+<ul>
+<li>系统代理：通常影响遵循 OS 代理设置的应用；CLI/守护进程可能不遵循。</li>
+<li><code>HTTP_PROXY</code>/<code>HTTPS_PROXY</code>：很多命令行工具读取，但不是所有工具都读取；变量值可能被子进程继承。</li>
+<li>TUN/VPN：改变部分或全部 IP 路由，不等同于“每个 DNS 查询已经得到正确处理”。</li>
+<li>Docker：Docker Desktop 与 Linux daemon 的配置地点可能不同。<strong>官方明确：Docker Desktop 不读取 daemon.json 中的 daemon 代理配置。</strong><a href="https://docs.docker.com/engine/daemon/proxy/">Docker 官方</a></li>
+<li>Git/IDE：IDE 中的 Git/终端也可能有独立设置和环境变量。</li>
+</ul>
+<h2>二、Mac 安全诊断（不打印订阅信息）</h2>
+<p>打开终端，先运行：</p>
+<pre><code class="language-bash"># 网络服务名称可因电脑而异；先列出再选具体服务
+networksetup -listallnetworkservices
+# 查看当前系统首选网络下的公开路由（仅诊断）
+route -n get default | head -20
+# 仅列出是否存在代理环境变量，不显示其值或密钥
+( env | cut -d= -f1 | grep -Ei '^(http|https|all|no)_proxy$' ) || true
+# 查看 DNS 汇总可能很长，分享日志前人工脱敏
+scutil --dns | head -60
+</code></pre>
+<p>然后按顺序：①浏览器加载公开文档；②在终端测试公开目标；③检查 IDE 内置终端；④若必要，检查 Docker。</p>
+<p><strong>临时验证</strong>（以下为本机示例监听地址；将 <code>7890</code> 改为你的实际合法配置监听端口）：</p>
+<pre><code class="language-bash"># 直接检查公开网页，10 秒无响应就停止
+curl -I -L --max-time 10 https://example.com
+# 仅诊断 HTTP 代理是否可用，不会永久修改系统设置
+curl -I -L --max-time 10 --proxy http://127.0.0.1:7890 https://example.com
+# 如果使用 Git，测试公共仓库的 HTTPS 元数据
+HTTPS_PROXY=http://127.0.0.1:7890 \
+ git ls-remote https://github.com/git/git.git HEAD
+</code></pre>
+<p><strong>注意</strong>：连接失败时，不要用 <code>curl -k</code>、<code>GIT_SSL_NO_VERIFY=1</code> 或取消 TLS 校验“修复”；这可能隐藏证书中间人、代理错误和服务器身份问题。示例 <code>example.com</code> 测试不证明目标服务在中国大陆可访问。</p>
+<h2>三、Windows 最小诊断</h2>
+<p>PowerShell（不要粘贴含密钥的真实输出到公开提问）：</p>
+<pre><code class="language-powershell"># DNS 状态与 IP 配置
+Get-DnsClientServerAddress | Select-Object -First 10
+# 只显示变量是否设置；不显示密码和地址
+Test-Path Env:HTTPS_PROXY
+# 测试 HTTPS DNS/HTTP 请求；只用公开目标
+Test-NetConnection example.com -Port 443
+curl.exe -I --max-time 10 https://example.com
+</code></pre>
+<p>检查 Windows「设置 → 网络和 Internet → 代理」中的系统代理是否与本机客户端一致。若有企业 VPN/MDM，优先通过 IT 排查而非自行覆盖策略。</p>
+<h2>四、CLI 的正确处理顺序</h2>
+<ol>
+<li><strong>只浏览器失败：</strong>先查浏览器扩展/代理/PAC；不用立刻动全机设置。</li>
+<li><strong>浏览器正常而终端失败：</strong>先检查终端变量和工具自己的代理设置，确认在同一个终端会话测试。</li>
+<li><strong>SSH 失败但 HTTPS Git 成功：</strong>SSH 端口/出口与 HTTPS 是不同路径；可按 GitHub 官方指南选择有授权的 HTTPS 方式，不要随意改防火墙。</li>
+<li><strong>包管理器失败：</strong>先核对官方仓库 URL、证书和锁文件；用临时环境变量诊断，避免污染全局配置。</li>
+<li><strong>IDE 插件失败：</strong>核对插件进程与其网络权限，不假定集成终端代理设置自动覆盖插件。</li>
+<li><strong>Docker 镜像失败：</strong>检查是 Docker Desktop、dockerd，还是容器内应用；三者设置不同。</li>
+</ol>
+<h2>五、Docker 与容器</h2>
+<ul>
+<li><strong>Docker Desktop：</strong>到 Desktop 官方设置中配置代理，不要套用 Linux <code>daemon.json</code> 方案。</li>
+<li><strong>Linux Engine：</strong>参考 <a href="https://docs.docker.com/engine/daemon/proxy/">Docker daemon proxy</a>，使用经过批准的代理、按文档重启服务；会影响拉镜像等操作，生产环境需变更窗口。</li>
+<li><strong>容器内：</strong>运行期需要单独设计必要的环境变量和 <code>NO_PROXY</code>；<code>localhost</code> 在容器内通常指容器自身，<strong>不等于宿主机</strong>。</li>
+<li><strong>日志：</strong>代理 URL 如果包含凭据，不在命令行截图和 issue 中公开；应优先使用组织密钥管理。</li>
+</ul>
+<h2>六、收工清理与回滚</h2>
+<p>临时命令如 <code>HTTPS_PROXY=... command</code> 仅影响该命令。若之前在 shell 执行过 <code>export</code>，可在确认不是企业必须配置后运行：</p>
+<pre><code class="language-bash">unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy
+</code></pre>
+<p>不要无条件删除 <code>NO_PROXY</code>，它可能关系内网服务。若你修改了永久 Git 配置，先执行 <code>git config --global --get-regexp '^http.*proxy'</code> 人工查看并脱敏后确认，再做定点恢复。不得运行陌生人提供的“一键清空全部网络”脚本。</p>
+<p><strong>完成标准：</strong>至少分别验证浏览器、终端、IDE（如使用）、Docker（如使用）四个执行面；每一个写明成功/失败、记录证据、回滚动作。模板见 <a href="templates/开发工作流验收表.md">开发工作流验收表</a>。</p>
+</section>
+<section class="chapter" id="chapter-28" data-search="27｜移动端全场景：iPhone / iPad / Android / 热点 / 漫游"><div class="chapter-index">28 / 36</div><h1>27｜移动端全场景：iPhone / iPad / Android / 热点 / 漫游</h1>
+<p>本章不承诺某个 App 在中国大陆永久可达。<strong>手机、平板、电脑之间，不要把“安装同一个 App”视为等价网络行为。</strong></p>
+<h2>一、每台设备都做四组测试</h2>
+<table>
+<thead>
+<tr>
+  <th>测试条件</th>
+  <th>怎么操作</th>
+  <th>要记录什么</th>
+  <th>常见失败</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>A 家中 Wi-Fi</td>
+  <td>连 Wi-Fi，按需启动合法接入</td>
+  <td>目标任务、DNS、出口、状态</td>
+  <td>路由器和本机 DNS 不一致</td>
+</tr>
+<tr>
+  <td>B 蜂窝移动网络</td>
+  <td>关闭 Wi-Fi 单独测试</td>
+  <td>任务成功与延迟、流量消耗</td>
+  <td>某个协议/接入受限</td>
+</tr>
+<tr>
+  <td>C Wi-Fi → 蜂窝</td>
+  <td>先做低风险任务，切换网络后重试</td>
+  <td>重连耗时、登录会话</td>
+  <td>网络切换导致连接失效</td>
+</tr>
+<tr>
+  <td>D 热点共享</td>
+  <td>用手机热点连接 Mac/iPad，单独检查 Mac/iPad 出口</td>
+  <td>电脑的出口与 App 成功率</td>
+  <td>以为手机 VPN 会自动保护热点客户机</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键知识：</strong>热点共享出去的设备，其网络路由与手机本机 VPN 不一定相同。不要假定“手机绿色已连接 → Mac 自动经过同一出口”；必须在 Mac 自己检测并配置所需的合法网络路径。</p>
+<h2>二、Apple 设备：按需连接和企业管理的差别</h2>
+<p><a href="https://support.apple.com/guide/deployment/vpn-overview-depae3d361d0/1/web/1.0">Apple 官方的 VPN deployment</a> 提到 VPN On Demand 和 Per-App VPN，但后者常涉及 MDM、受管理配置和应用授权；<strong>普通用户看到一个 VPN 开关，并不代表具备所有企业级按应用路由功能。</strong></p>
+<ol>
+<li>从官方渠道安装有维护记录的 App；阅读 VPN 添加配置权限提示。</li>
+<li>先检查是否存在老 VPN 或设备管理描述文件：删除前辨明是否属于学校/公司的托管配置。</li>
+<li>在 Wi-Fi 与蜂窝下分别用低风险任务测试；锁屏一段时间后再次执行任务。</li>
+<li>若需要自动连接，优先使用厂商官方明确支持的设置，不导入陌生描述文件。</li>
+<li>用户想访问局域网设备时，检查本地网络权限与官方“允许局域网”选项；切换后测试打印机和 NAS。</li>
+<li>关闭接入时，确认国内支付、通话、地图和单位内网可恢复。</li>
+</ol>
+<h2>三、eSIM 和海外漫游：分开验证三件事</h2>
+<ul>
+<li><strong>机型兼容：</strong>设备实际型号、运营商锁定、iOS/Android 版本、eSIM 管理能力。中国大陆购买的设备不能一概按海外机型说明操作。见 <a href="https://support.apple.com/zh-cn/123879">Apple 中国大陆 eSIM 官方说明</a>。</li>
+<li><strong>漫游机制：</strong>境外运营商套餐是否允许在当前地区使用、数据出口落地何处、需要哪些 APN/漫游设置，以运营商条款为准。</li>
+<li><strong>账单风险：</strong>漫游套餐的流量单位、限速、公平使用政策、热点共享限制和到期规则。先进行低量验证，再开始大流量上传。</li>
+</ul>
+<p>跨境漫游的用户不应假定自己自动拥有海外账号、收款或内容创作者资格；平台规则与网络出口不同。</p>
+<h2>四、Android 需要额外检查</h2>
+<ul>
+<li>手机系统是否限制后台运行/电池优化导致连接被回收；各品牌菜单不同，不建议一概永久取消所有安全限制。</li>
+<li>同时存在企业工作资料与个人资料时，先尊重工作资料的管理员设置。</li>
+<li>若 App 提供“始终开启 VPN”和“阻止无 VPN 连接”之类安全行为，弄清它们是否会影响通话、支付、消息推送和应急功能，再决定是否启用。</li>
+<li>与 iPad 一样，切换 Wi-Fi/蜂窝或热点后必须重新验证目标任务。</li>
+</ul>
+<h2>五、外出工作的三项备份</h2>
+<ol>
+<li>本地保存工作所需文件、脚本帮助文档、客户会议号码和预约信息（不得留下明文 API 密钥）。</li>
+<li>提前准备经验证的第二网络介质，例如蜂窝/宽带的独立组合；不可用时停止敏感任务。</li>
+<li>保存 <a href="templates/应急十分钟处置卡.md">十分钟应急处置卡</a>，避免在赶会议时现场下载陌生软件。</li>
+</ol>
+<p><strong>完成标准：</strong>Wi-Fi、蜂窝、切换、热点这四类至少完成适用的测试；iPhone 与 iPad 分别验收，绝不靠主观感觉。</p>
+</section>
+<section class="chapter" id="chapter-29" data-search="28｜主备策略工程化：一条线路失效，工作继续"><div class="chapter-index">29 / 36</div><h1>28｜主备策略工程化：一条线路失效，工作继续</h1>
+<p><strong>本章目标：</strong>把“我买了两条线路”改造成真正有故障独立性的备份架构，并规定何时切换、谁来切、多久恢复。</p>
+<h2>1. 区分 7 个故障域</h2>
+<table>
+<thead>
+<tr>
+  <th>故障域</th>
+  <th>典型问题</th>
+  <th>两个方案是否可能同时失败？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>接入介质</td>
+  <td>家庭宽带断线、Wi-Fi 路由器损坏</td>
+  <td>都依赖同一条宽带则会</td>
+</tr>
+<tr>
+  <td>本地运营商</td>
+  <td>某运营商网络异常</td>
+  <td>两条方案都跑在同运营商仍可能会</td>
+</tr>
+<tr>
+  <td>本地设备</td>
+  <td>电脑更新后网络栈异常</td>
+  <td>同一台设备多客户端仍会</td>
+</tr>
+<tr>
+  <td>配置/客户端</td>
+  <td>同一订阅配置更新出错</td>
+  <td>主备使用同订阅/同软件会</td>
+</tr>
+<tr>
+  <td>出口服务器</td>
+  <td>VPS 宕机、磁盘满、带宽耗尽</td>
+  <td>同服务器不同端口/协议一定会</td>
+</tr>
+<tr>
+  <td>上游供应商</td>
+  <td>服务商机房、账户、支付、管理面故障</td>
+  <td>同品牌两个地区未必独立</td>
+</tr>
+<tr>
+  <td>目标服务</td>
+  <td>目标网站宕机、账号安全验证、地区许可限制</td>
+  <td>换网络不解决</td>
+</tr>
+</tbody>
+</table>
+<p><strong>判断备用是否有效：</strong>至少回答“如果主服务器完全关机，备用还能工作吗？”以及“如果家庭宽带断线，备用还能工作吗？”前者不成立，备用不具备出口独立性；后者不成立，备用不具备接入独立性。</p>
+<h2>2. 三套可落地架构</h2>
+<h3>轻量版（普通用户/低频）</h3>
+<ul>
+<li><strong>主用</strong>：一个经过 7 天测试的合法授权服务。</li>
+<li><strong>备用</strong>：手机蜂窝上网 + 另一条经过实际任务验证的服务（必要时）。</li>
+<li><strong>应急</strong>：资料离线、待网络恢复时发送。</li>
+<li><strong>限制</strong>：如果备用只是“同服务不同节点”，它只减少单节点失效，<strong>不保证服务商级故障恢复</strong>。</li>
+</ul>
+<h3>生产力版（开发者/创作者）</h3>
+<ul>
+<li><strong>主用</strong>：常用宽带上满足服务条款的受控接入。</li>
+<li><strong>备用</strong>：不同维护方/不同供应商管理的接入，以及手机热点作为下层独立网络。</li>
+<li><strong>临时缓冲</strong>：源代码本地提交、视频分段导出、文案草稿本地保存。</li>
+<li><strong>边界</strong>：自建 VPS 需要更新、补丁、备份、资源告警；它不必然比可靠的商业服务稳定。</li>
+</ul>
+<h3>企业版（客户资料/跨境业务）</h3>
+<ul>
+<li>先确定组织政策、采购与数据流合规，采用可管理、可审计的服务。</li>
+<li>双 WAN 或不同运营商接入；必要时跨可用区/供应商设计专线/管理式 SD-WAN，并向供应商索取明确 SLA。</li>
+<li>设置运维联系人、变更冻结窗口、合规日志留存期限、分级事故通报。</li>
+<li>不得把员工私人 VPN 当作生产环境的替代合规路径。</li>
+</ul>
+<h2>3. 明确切换阈值：三段状态机</h2>
+<p>以下阈值是<strong>可调整的示例团队内部规则</strong>，不是行业事实；根据你业务的数据修订。</p>
+<table>
+<thead>
+<tr>
+  <th>状态</th>
+  <th>条件例子</th>
+  <th>动作</th>
+  <th>禁忌</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>绿色</td>
+  <td>核心任务正常，会议可维持</td>
+  <td>不动当前线路；记录一次心跳</td>
+  <td>因 1 次测速“更快”随意切</td>
+</tr>
+<tr>
+  <td>黄色</td>
+  <td>连续 2 次真实任务失败，间隔 30 秒复测</td>
+  <td>停止新上传，打开备用试运行</td>
+  <td>立即重启服务器/更新全部配置</td>
+</tr>
+<tr>
+  <td>红色</td>
+  <td>5 分钟关键任务未恢复，或安全策略不满足</td>
+  <td>切换已演练备用；关键任务必要时停止（fail closed）</td>
+  <td>在敏感登录/交易中反复切出口</td>
+</tr>
+</tbody>
+</table>
+<h3>备用切换 SOP</h3>
+<ol>
+<li>记录故障时刻、当前接入、目标任务、错误；截屏前打码。</li>
+<li>暂停上传、支付、客户操作；确认任务不会重复提交。</li>
+<li>关闭主网络代理/隧道，避免多个系统代理互相争用。</li>
+<li>启用预先验收的备用路径；在低风险目标先进行确认。</li>
+<li>仅在出口符合业务安全与条款要求时恢复关键任务。</li>
+<li>主线恢复后先在测试任务验证，不在会议/上传中途切回。</li>
+<li>记录 RTO（从故障开始到任务恢复的时间）与 Root Cause（证实/待查分开）。</li>
+</ol>
+<h2>4. 开机自动切换还是手动切换？</h2>
+<ul>
+<li><strong>个人使用</strong>：手动切换往往更可控，可避免意外跨地区登录、DNS 漏配与重试重复提交。先做到可观测、可回滚，再谈自动化。</li>
+<li><strong>生产系统</strong>：自动切换必须有健康检查、抖动抑制（避免两条线来回跳）、状态监测和审计；从不以“单次 ping 成功”作为业务健康。</li>
+<li><strong>Tailscale 等组网技术</strong>：其 subnet router/app connector 对重叠路由有故障接管能力，但与任意海外上网路径不同，不能推导所有场景自动恢复。参见 <a href="https://tailscale.com/kb/1115/subnet-failover/">官方 HA</a> 和 <a href="https://tailscale.com/docs/features/route-selection">路由选择</a>。</li>
+</ul>
+<h2>5. 四种必须做的演练</h2>
+<ul>
+<li><strong>断主方案：</strong>人工断开主连接，核对备用能否完成同一真实任务。</li>
+<li><strong>断主介质：</strong>停止家庭 Wi-Fi，改为蜂窝热点，核对出口/设备是否符合预期。</li>
+<li><strong>客户端冲突：</strong>退出 VPN/代理后，局域网与常用国内 App 能否恢复。</li>
+<li><strong>供应商失联：</strong>无法登录服务商面板/不能收到邮件时，备用的配置和恢复码是否仍可取用。</li>
+</ul>
+<p>填写 <a href="templates/主备故障矩阵.md">主备故障矩阵</a>。<strong>一次演练成功不能证明未来永久可用</strong>，每月重复关键演练，出现大版本更新后复测。</p>
+</section>
+<section class="chapter" id="chapter-30" data-search="29｜网络路由策略：分流、DNS、IPv6、TUN 与本地设备"><div class="chapter-index">30 / 36</div><h1>29｜网络路由策略：分流、DNS、IPv6、TUN 与本地设备</h1>
+<p><strong>范围：</strong>解释已授权方案如何制定路由策略和验证结果。具体配置字段必须以所用客户端和版本的官方文档为准，不提供未经测试的通用“神奇配置”。</p>
+<h2>1. 一张策略表比一万行规则更重要</h2>
+<table>
+<thead>
+<tr>
+  <th>流量类别</th>
+  <th>默认建议</th>
+  <th>为什么</th>
+  <th>必须检查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>本地局域网/NAS/打印机</td>
+  <td>按本机与组织规则保持 LAN 可达</td>
+  <td>本地协作与设备发现</td>
+  <td>局域网路由、mDNS、访问权限</td>
+</tr>
+<tr>
+  <td>国内支付/银行/政务</td>
+  <td>不无故转交外部代理；符合服务规则</td>
+  <td>减少第三方风险与可用性问题</td>
+  <td>实际直连与 HTTPS 完整性</td>
+</tr>
+<tr>
+  <td>海外研发/文档/允许的 API</td>
+  <td>用符合授权和服务条款的接入路径</td>
+  <td>明确任务与合法权限</td>
+  <td>Web、CLI、IDE 各自结果</td>
+</tr>
+<tr>
+  <td>企业内网、客户系统</td>
+  <td>只走单位批准通道</td>
+  <td>访问控制、审计与数据安全</td>
+  <td>ZTNA/企业 VPN、不可旁路</td>
+</tr>
+<tr>
+  <td>未分类服务</td>
+  <td>保守处理；由风险决定直连或阻断</td>
+  <td>防止无意泄漏/误路由</td>
+  <td>通过日志确认规则命中</td>
+</tr>
+</tbody>
+</table>
+<h2>2. 三种路由模式的实际差异</h2>
+<ul>
+<li><strong>系统 HTTP(S) 代理：</strong>由支持系统代理的应用选择使用，未必影响所有进程与 UDP。</li>
+<li><strong>应用级代理：</strong>某浏览器或开发工具独立设置，仅对该应用生效。</li>
+<li><strong>全隧道/TUN：</strong>改变更广泛的网络包路由，适用于需求明确的受控环境；需更谨慎处理内网、DNS、IPv6 与本地广播。</li>
+</ul>
+<p>选择规则：需要最少时用最少；先单一应用成功，再扩展；企业设备由 IT 管理。</p>
+<h2>3. DNS 的五步确认</h2>
+<ol>
+<li>查目标域名是否拼错，以及域名本身是否解析。</li>
+<li>区分操作系统使用的 DNS、客户端的解析设置、浏览器安全 DNS、企业内网 Split DNS。</li>
+<li>使用低风险域名测试，不把真实客户域名放到公共查询站提交。</li>
+<li>判断问题在 DNS 查询阶段还是已解析后的 HTTPS/TCP/QUIC 建连阶段。</li>
+<li>只有在证实某条规则有问题时才改动一处，再复测；不要直接“关闭所有 DNS 安全设置”。</li>
+</ol>
+<p><strong>重要事实：</strong>Cloudflare 的 Split Tunnels 文档指出，IP 路由分流和 DNS 请求策略可能分别处理。故 DNS 不是“只要分流正确就自动正确”。<a href="https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/configure/route-traffic/split-tunnels/">官方文档</a></p>
+<h2>4. IPv6 和本地 LAN 不要忽略</h2>
+<ul>
+<li>检查 IPv4 及 IPv6 访问路径是否符合公司/用户设计，避免只验证 IPv4 就宣布“不会泄漏”。</li>
+<li>为远端出口关闭 IPv6 并非所有场景的最佳策略；先了解客户端与上游是否完整支持，再按安全要求处理。</li>
+<li>TUN 默认路由变化可能影响 NAS、打印机和设备发现；局域网白名单也会影响暴露面，不能无条件开放所有私有网段。</li>
+<li>热点客户机、虚拟机、容器分别有路由表，不能假设共享主机隧道。</li>
+</ul>
+<h2>5. 安全导向的两种异常默认行为</h2>
+<p><strong>Fail closed（失败阻断）</strong>：关键业务不能确定经批准的加密/受控通道时，停止其网络通信；恢复前不重新发送敏感数据。适合企业敏感数据、需要持续 VPN 策略的授权业务。</p>
+<p><strong>Fail open（失败回退）</strong>：在安全要求允许的情况下，低风险国内网站与离线工作可恢复普通网络，保证基本可用性。<strong>不能让敏感任务在断线后意外直连</strong>。</p>
+<p>这两类行为按应用/任务而不是凭心情选择；在 <a href="templates/业务网络分层表.md">业务网络分层表</a> 中写下来。</p>
+<h2>6. 修改规则的最小变更流程</h2>
+<p><code>现象 → 提出唯一假设 → 备份旧配置 → 修改一项 → 实测三个关键任务 → 保存结果 → 不满足就回滚</code></p>
+<p>示例：原来 NAS 无法发现。优先确认本机 LAN 直连与客户端本地网络权限；不要为解决 NAS 问题改动全部海外路由规则。若本地网段冲突（公司 LAN 与家用 LAN 重叠），应由网络管理员调整网络规划。</p>
+<h2>7. 给高级用户的检查单</h2>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>目标域名及子域名处理符合设计，避免过宽通配符。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>DNS 路径已验证，考虑企业内网域名与分流 DNS。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>IPv4 / IPv6 的实际行为有记录。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>HTTP(S)、WebSocket、UDP/QUIC 等应用所需协议在已授权网络下可达。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>本地服务、NAS、打印机、会议 App 正常。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>断链时敏感任务的处理方式已明确。</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>规则命中日志仅保留必要最小信息，不记录凭据。</li>
+</ul>
+<p>参考 <a href="templates/路由决策与验证表.md">路由决策与验证表</a>。</p>
+</section>
+<section class="chapter" id="chapter-31" data-search="30｜怎么买最划算：试用、供应商风险、成本模型与退出策略"><div class="chapter-index">31 / 36</div><h1>30｜怎么买最划算：试用、供应商风险、成本模型与退出策略</h1>
+<p>本项目不提供“机场排名”“最稳服务商排行”或长期可用保证；原因是缺少能覆盖地区、运营商和时段的可复核跨供应商数据。<strong>采购目标是符合规则的真实业务可用性 + 可退出成本，而不是最低价格。</strong></p>
+<h2>1. 采购前问自己 8 个问题</h2>
+<ol>
+<li>我到底需要哪个真实任务？文档访问、上传、会议、API，还是企业内网？</li>
+<li>我的设备和系统是什么？需要多少人、多少同时连接、有没有公司 MDM？</li>
+<li>订阅/账号/设备配置由谁保管？丢失后能否恢复和吊销？</li>
+<li>有哪些隐私承诺？是否有独立审计？日志保留、投诉和数据出口怎么说明？</li>
+<li>取消和退款条款是什么？能否拿到官方票据？</li>
+<li>支付后是否要安装陌生证书、远程控制软件、关闭杀毒或提交大量隐私？<strong>若是，先停止采购。</strong></li>
+<li>公司用途是否合法合规、符合客户协议？</li>
+<li>我是否已经拥有有效的独立备用？</li>
+</ol>
+<h2>2. 采购 3 段式：先最小，再验证，再付长周期</h2>
+<p><strong>阶段 1：桌面研究</strong>：验证服务商公司主体、官网、隐私条款、更新时间、软件发布方、工单渠道、退款政策。供应商宣传不能代替测量。</p>
+<p><strong>阶段 2：小额试用</strong>：在两种网络、三种常用时段，完成 3 个真实任务并记录成败、p95、异常。若免费试用无法在你的运营商使用，不因“别人说很稳”购买年费。</p>
+<p><strong>阶段 3：按需扩容</strong>：确认体验、账单、权限与退出方式后，才考虑季度/年付。个人场景可先采用月付降低供应商倒闭或线路变更损失；企业看 SLA、退出条款和数据销毁。</p>
+<h2>3. 从 TCO 看成本</h2>
+<p><strong>月均总拥有成本（TCO） = 订阅/服务器费用 + 域名/软件费用 + 运维时间 × 时间价值 + 故障期望损失 + 备份费用。</strong></p>
+<p>以下全部是<strong>演示假设，不是市场报价</strong>：</p>
+<table>
+<thead>
+<tr>
+  <th>项目</th>
+  <th style="text-align:right">低价方案 A</th>
+  <th style="text-align:right">稳定方案 B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>月订阅/服务器</td>
+  <td style="text-align:right">¥30</td>
+  <td style="text-align:right">¥100</td>
+</tr>
+<tr>
+  <td>每月维护工时</td>
+  <td style="text-align:right">3h</td>
+  <td style="text-align:right">0.5h</td>
+</tr>
+<tr>
+  <td>假设每小时机会成本</td>
+  <td style="text-align:right">¥100</td>
+  <td style="text-align:right">¥100</td>
+</tr>
+<tr>
+  <td>每月故障预计影响</td>
+  <td style="text-align:right">¥150</td>
+  <td style="text-align:right">¥50</td>
+</tr>
+<tr>
+  <td>独立备用网络成本</td>
+  <td style="text-align:right">¥40</td>
+  <td style="text-align:right">¥40</td>
+</tr>
+<tr>
+  <td><strong>计算后的 TCO</strong></td>
+  <td style="text-align:right"><strong>¥520</strong></td>
+  <td style="text-align:right"><strong>¥240</strong></td>
+</tr>
+</tbody>
+</table>
+<p>在这些假设下，看似贵的 B 总成本反而低。但真实选择必须用你的账单和停工数据填写 <a href="templates/月度成本核算表.csv">月度成本核算表</a>，不能把示例理解成“某品牌更稳定”。</p>
+<h2>4. 评分模型（建议个人默认权重，可调整）</h2>
+<table>
+<thead>
+<tr>
+  <th>维度</th>
+  <th style="text-align:right">参考权重</th>
+  <th>如何评分（1—5）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>实际任务成功率</td>
+  <td style="text-align:right">30%</td>
+  <td>按自己的 7 天测量记录</td>
+</tr>
+<tr>
+  <td>失效后的恢复能力</td>
+  <td style="text-align:right">20%</td>
+  <td>真实备用演练，非商家承诺</td>
+</tr>
+<tr>
+  <td>透明度与账户安全</td>
+  <td style="text-align:right">20%</td>
+  <td>官网、隐私声明、MFA、可吊销能力</td>
+</tr>
+<tr>
+  <td>客户端适配与运维成本</td>
+  <td style="text-align:right">15%</td>
+  <td>能否在所有必须设备执行任务</td>
+</tr>
+<tr>
+  <td>价格与退出成本</td>
+  <td style="text-align:right">10%</td>
+  <td>TCO、退款和续费限制</td>
+</tr>
+<tr>
+  <td>合规/企业要求</td>
+  <td style="text-align:right"><strong>一票否决</strong></td>
+  <td>业务不符政策则不采购</td>
+</tr>
+<tr>
+  <td>其他增值体验</td>
+  <td style="text-align:right">5%</td>
+  <td>售后、工单响应等</td>
+</tr>
+</tbody>
+</table>
+<p>不要把测不到的维度赋 5 分；写 <code>未知</code>，保留决策不确定性。</p>
+<h2>5. 识别推广内容</h2>
+<p>X、YouTube、论坛、Telegram、评测站的优惠码和测速截图只能做线索；重复发布、返佣、失去上下文的测速都应降级为营销素材。需要记录<strong>发布和测试的确切日期、地点范围、设备、运营商、时段、样本数</strong>，不得凭“原生/住宅/独享”几个标签判断安全或地区资格。</p>
+<h2>6. 退出机制</h2>
+<ul>
+<li>保存合法采购合同、取消入口、已付金额、续费日和联系人。</li>
+<li>停用后在服务商面板吊销访问密钥，移除旧设备授权和客户端残留系统代理。</li>
+<li>如果涉及公司数据，核查数据留存与销毁承诺，并按组织流程完成交接。</li>
+<li>到期前 7 天评估是否续约；任何大版本升级前先保留可回滚的已知配置。</li>
+</ul>
+</section>
+<section class="chapter" id="chapter-32" data-search="31｜安全分层：重要账号、AI 服务、支付和客户数据"><div class="chapter-index">32 / 36</div><h1>31｜安全分层：重要账号、AI 服务、支付和客户数据</h1>
+<p>本章既面向个人创作者，也面向工作团队。<strong>任何网络出口都不能替你提供合法账号资格、可信终端或稳定身份。</strong>网络切换引起的登录提醒是安全机制之一，不应通过伪造住址、证件或身份绕过。</p>
+<h2>1. 按数据敏感度分四层</h2>
+<table>
+<thead>
+<tr>
+  <th>级别</th>
+  <th>例子</th>
+  <th>建议网络/操作方式</th>
+  <th>故障时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>L0 公开资料</td>
+  <td>官方博客、公开代码、公开论文</td>
+  <td>来源可信的合法网络接入</td>
+  <td>可换已验收备用</td>
+</tr>
+<tr>
+  <td>L1 普通工作</td>
+  <td>一般脚本、公共素材、协作内容</td>
+  <td>工作专用配置与基本 MFA</td>
+  <td>按需暂停/恢复</td>
+</tr>
+<tr>
+  <td>L2 账号与商业资料</td>
+  <td>订阅平台、店铺后台、收款报表</td>
+  <td>尽量在可信设备、组织许可通道操作，验证登录与恢复</td>
+  <td>不进行多出口反复登录，先保护账户</td>
+</tr>
+<tr>
+  <td>L3 客户机密与生产凭据</td>
+  <td>客户数据、密钥、财务/医疗敏感数据</td>
+  <td>受控设备、企业审批通道、访问权限与加密审计</td>
+  <td>连接不合规则停止传输</td>
+</tr>
+</tbody>
+</table>
+<p><strong>使用合法 VPN 也可能面对出口运营方、DNS 提供商、终端恶意软件和目标平台的不同信任边界</strong>。HTTPS 通常保护内容传输，但不能把它理解成所有元数据绝对不可见。</p>
+<h2>2. 账号本身至少做好这些事</h2>
+<ul>
+<li>每个关键平台一个独立强密码，使用可靠密码管理器。</li>
+<li>优先使用平台支持的 MFA / 通行密钥；恢复码离线保管，至少安排第二种合法恢复路径。</li>
+<li>不把恢复码、私钥、API Token、支付凭据写入 Git 仓库、模板、截图或 ChatGPT 提示词。</li>
+<li>定期查看登录活动、第三方 OAuth 授权、SSH keys 和过期 Token。</li>
+<li>网络异常时不要相信“代理客服”私信提供的解除风控链接，通过平台官方入口处理。</li>
+</ul>
+<p><a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure">GitHub 官方安全清单</a> 建议唯一密码、2FA、密钥和授权应用核查；其 <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials">恢复机制说明</a> 明确恢复方法丢失可能无法找回账号。</p>
+<h2>3. 多设备与多角色隔离</h2>
+<ul>
+<li><strong>日常工作机：</strong>只运行经审查的客户端，避免测试未知安装包。</li>
+<li><strong>测试环境：</strong>新客户端/新规则先在非生产设备或隔离的测试用户中验证；用脱敏样本。</li>
+<li><strong>企业设备：</strong>受组织策略管理；私自修改企业代理可能破坏安全与审计要求。</li>
+<li><strong>多人共享网络：</strong>权限按人分配、最小化、可撤销；不要把一个管理员密钥发到群里。</li>
+<li><strong>云 VPS：</strong>SSH 密钥、最小端口暴露、自动更新策略和备份；退出供应商前注销凭据。</li>
+</ul>
+<h2>4. 指纹浏览器与“住宅 IP”常见误解</h2>
+<p>独立浏览器配置文件、不同 Cookie 容器、代理出口、系统时区是不同层次。浏览器指纹工具无法保证真实性、不可追踪性或平台认可的地区资格。不要为避免平台身份校验而伪造居住地、支付主体或使用虚假证件。</p>
+<p><strong>账号运营建议</strong>：长期维护合规、可恢复的身份资料；变更设备或网络前保存官方 MFA 与恢复渠道，重大业务操作时减少不必要的网络切换。遇到平台限制遵循官方验证/申诉机制。</p>
+<h2>5. 五类事件响应</h2>
+<table>
+<thead>
+<tr>
+  <th>事件</th>
+  <th>第一动作</th>
+  <th>后续步骤</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>订阅 URL 被公开</td>
+  <td>立即失效/轮换授权</td>
+  <td>查询服务商使用情况、通知受影响使用者</td>
+</tr>
+<tr>
+  <td>服务器私钥被公开</td>
+  <td>立即轮换并评估重建</td>
+  <td>检查日志、网络端口、系统完整性</td>
+</tr>
+<tr>
+  <td>账号被异常登录</td>
+  <td>走平台官方入口冻结会话、改密码</td>
+  <td>轮换 Token、检查 OAuth、审计财务影响</td>
+</tr>
+<tr>
+  <td>公共 Wi-Fi 安装被诱导证书</td>
+  <td>退出该网络，检查设备管理与证书</td>
+  <td>使用可信网络访问官方支持，必要时重置受影响设备</td>
+</tr>
+<tr>
+  <td>生产客户数据经不明通道传输</td>
+  <td>暂停传输并按公司响应流程上报</td>
+  <td>做风险评估、保全证据、按合同法规通知</td>
+</tr>
+</tbody>
+</table>
+<p>使用 <a href="templates/账号与敏感任务隔离卡.md">账号与敏感任务隔离卡</a> 做定期核查。</p>
+</section>
+<section class="chapter" id="chapter-33" data-search="32｜稳定性不是感觉：监控面板、SLO、变更管理与月度复盘"><div class="chapter-index">33 / 36</div><h1>32｜稳定性不是感觉：监控面板、SLO、变更管理与月度复盘</h1>
+<h2>一、必须分开统计四类数据</h2>
+<ol>
+<li><strong>网络层成功</strong>：设备在线、授权客户端已建连接、DNS 与出口符合设定。</li>
+<li><strong>应用层成功</strong>：网页、Git、API 或会议在事先定义的时限内完成核心动作。</li>
+<li><strong>业务层成功</strong>：用户能交付工作，例如视频上传完成、代码提交完成、会议持续顺畅。</li>
+<li><strong>恢复能力</strong>：主方案失败后实际多少分钟能恢复任务；以及是否可安全退回国内普通网络。</li>
+</ol>
+<p>只测第 1 项会产生“所有图标都是绿的，但没法工作”的假象。</p>
+<h2>二、设计最小监测计划</h2>
+<h3>7 天观察</h3>
+<p>每天 3 个时段 × 2 种接入 × 7 天 = <strong>42 个预设观测点</strong>（不适用网络可提前标记，不可把缺失填成功）。记录设备、地点粗粒度、接入运营商、出口方案代号、目标任务、成功与否、响应时间、DNS/IPv6 是否异常。别将真实手机号、客户 URL、Token、订阅链接记入表。</p>
+<h3>每周复核</h3>
+<ul>
+<li>统计每项业务任务的成功样本 / 有效样本，另报告计划样本总数和缺失率。</li>
+<li>延迟统计 p50/p95 时只对实际取得耗时的同类任务计算；失败样本单独报告，避免幸存者偏差。</li>
+<li>区分基础 Wi-Fi 问题、上游/服务器问题、应用账号问题和区域服务限制。</li>
+<li>看切换发生次数、误切次数和业务损失，不能只看成功率。</li>
+</ul>
+<h3>每月复盘</h3>
+<ul>
+<li>收费/运维工时/工单/停工损失总成本。</li>
+<li>软件版本、密钥到期、服务商存续、是否需要更新或退出。</li>
+<li>30 天内真正独立切换是否成功。没有演练证据时报告“尚未验证”。</li>
+</ul>
+<h2>三、建议 SLO（<strong>自行定义的样例，不构成业内通用指标</strong>）</h2>
+<table>
+<thead>
+<tr>
+  <th>业务</th>
+  <th>示例 SLO</th>
+  <th>测量方法</th>
+  <th>失败代价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>公开资料浏览</td>
+  <td>有效样本任务成功率 ≥ 95%</td>
+  <td>页面成功打开并加载关键内容</td>
+  <td>可稍后重试</td>
+</tr>
+<tr>
+  <td>小额 API 开发</td>
+  <td>成功率 ≥ 98%，明确单次额度上限</td>
+  <td>固定低风险测试请求</td>
+  <td>额外成本与调试停滞</td>
+</tr>
+<tr>
+  <td>实时会议</td>
+  <td>每次会议人工记录卡顿/断音/掉线</td>
+  <td>真实会议记录，不只测 Ping</td>
+  <td>沟通中断</td>
+</tr>
+<tr>
+  <td>内容上传</td>
+  <td>每个文件的成功完成率 ≥ 98%</td>
+  <td>带大小和用时的成功上传事件</td>
+  <td>重传和发布延误</td>
+</tr>
+<tr>
+  <td>恢复能力</td>
+  <td>RTO ≤ 10 分钟</td>
+  <td>断主线开始到完成业务任务</td>
+  <td>停工损失</td>
+</tr>
+</tbody>
+</table>
+<p>样本小时数很少时，不应用“99.9% 年度稳定率”等宣传语。<code>成功率 = 已明确成功的有效样本数 / 明确成功或失败的有效样本数</code>，同时必须展示遗漏率；不同类型任务不要胡乱混算一个平均分。</p>
+<h2>四、把网络健康映射到业务决策</h2>
+<ul>
+<li><strong>连续下降但仍可用：</strong>优先保留已有会话、停止不必要的配置变更，晚些时候做 A/B 复测。</li>
+<li><strong>连接已断：</strong>按 <a href="#chapter-29">28 章</a> 先恢复业务；故障归因推迟到恢复后。</li>
+<li><strong>账号安全异常：</strong>停止敏感操作，优先官方安全流程。不要通过换 10 条线路试图“刷掉异常”。</li>
+<li><strong>高成本/低可用性：</strong>用 TCO 和任务成功率决定淘汰，而不是看广告评价。</li>
+</ul>
+<h2>五、变更前后必须比较</h2>
+<p><strong>任何变更都记录：</strong><code>日期 → 变更前版本/配置摘要 → 唯一改动 → 目标 → 测试网络 → 三任务结果 → 发现异常 → 回滚是否有效</code>。</p>
+<p>每次最多改一个主要因素。更换节点、同时改 DNS、升级客户端和切换 TUN 会让失败原因无法辨认。<strong>先建立“已知可用配置快照”，再做探索。</strong></p>
+<p>使用现有 <a href="templates/七天测量表.csv">七天测量表</a> 和 <code>python3 tools/slo_report.py templates/七天测量表.csv</code>；月度报告模板见 <a href="templates/网络月度复盘.md">网络月度复盘</a>。</p>
+</section>
+<section class="chapter" id="chapter-34" data-search="33｜10 个可复现故障剧本：看到现象，就照表处理"><div class="chapter-index">34 / 36</div><h1>33｜10 个可复现故障剧本：看到现象，就照表处理</h1>
+<p><strong>证据说明：</strong>以下是根据网络层次和官方文档构造的<strong>操作演练场景</strong>，不冒充已验证的个人故事、客户案例或中国大陆现场实测。实际原因需要经过对照实验确认。优先做无破坏诊断，涉及单位设备由 IT 协助。</p>
+<h2>01｜所有应用都没有网络</h2>
+<p><strong>先看：</strong>关闭额外接入后正常网络是否通。若也不通，优先检查 Wi-Fi、网线、蜂窝信号、网关/欠费，而不是先重装 VPN。若普通网络恢复，但授权连接不能用，再看客户端状态。<strong>禁止：</strong>反复重置设备、同时变更 DNS 和网络路由。</p>
+<h2>02｜只有浏览器能打开公开代码仓库，终端失败</h2>
+<p><strong>初步假设：</strong>浏览器用了扩展/系统代理，终端没有继承正确设置。<strong>步骤：</strong>(1) 用公开目标 <code>curl -I</code>；(2) 仅检查环境变量名是否存在；(3) 仅使用经过验证的本地代理做临时对照；(4) 确认公司策略。详细见 <a href="#chapter-27">26 章</a>。<strong>验收：</strong>同个目标在浏览器和 CLI 均成功。<strong>回滚：</strong>撤销临时 shell 配置。</p>
+<h2>03｜终端 curl 能用，Docker pull 失败</h2>
+<p><strong>初步假设：</strong>Docker daemon 或 Desktop 的网络设置独立。<strong>步骤：</strong>确认 Desktop 或 Linux Engine；查看 Docker 官方代理文档；核对镜像源访问权限；不使用来历不明的镜像加速站。<strong>验收：</strong>受控环境拉取公开小镜像。<strong>回滚：</strong>恢复原有 daemon/Desktop 设置。来源：<a href="https://docs.docker.com/engine/daemon/proxy/">Docker 官方</a>。</p>
+<h2>04｜打开海外网页正常，手机热点的 Mac 失败</h2>
+<p><strong>初步假设：</strong>手机本机 VPN 并不自动覆盖热点客户机。<strong>步骤：</strong>Mac 独立验证当前出口/路由和真实目标；确保 Mac 的已授权访问配置独立有效。<strong>验收：</strong>Mac 真实业务成功，不拿手机的截图代替。<strong>回滚：</strong>关闭 Mac 临时代理，恢复原正常网络。</p>
+<h2>05｜设备“已连接”，网页依然打不开</h2>
+<p><strong>可能位置：</strong>目标站不可用/账户限制、DNS、路由、TLS、协议与应用区别。<strong>步骤：</strong>先比较已知正常公开 HTTPS 页面和目标页面；做 DNS 与 HTTPS 阶段区分；查看软件本地诊断并脱敏。<strong>禁止：</strong>关 TLS 证书校验、跳过证书错误。<strong>验收：</strong>完成业务任务，不仅是状态灯变绿。</p>
+<h2>06｜晚上不稳定，白天正常</h2>
+<p><strong>可能原因（未证实）：</strong>本地接入拥塞、上游容量、目标服务峰值、协议特性。<strong>步骤：</strong>固定同一设备、同一公开任务与相同测试流程，每天三时段持续一周；跨 Wi-Fi/蜂窝与备用上游对比。<strong>验收：</strong>有分组结果和明确样本量。<strong>禁止：</strong>凭一次晚间卡顿推定具体封锁原因。</p>
+<h2>07｜切到 TUN 后 NAS/打印机连不上</h2>
+<p><strong>可能原因：</strong>本地路由、局域网权限、名称解析与网段冲突。<strong>步骤：</strong>保存现状后暂时撤销新 TUN 设置，对比同一局域网服务；检查 LAN 访问与单位政策。<strong>验收：</strong>恢复 NAS 且其他关键任务正常。<strong>禁止：</strong>打开不必要的所有内网访问权限。</p>
+<h2>08｜海外服务提示地区限制或账号异常</h2>
+<p><strong>判断：</strong>IP 位置只是可能相关因素之一，账号资格、支付主体、手机号、税务或服务条款另有规则。<strong>步骤：</strong>检查官方服务地区与账户资格要求、查看官方安全通知、使用平台支持的验证/恢复入口。<strong>禁止：</strong>伪造住所/证件或反复切换可疑出口规避安全机制。<strong>验收：</strong>账户被正式允许访问，而非仅暂时打开页面。</p>
+<h2>09｜服务器在线，连接突然失败</h2>
+<p><strong>初步假设：</strong>服务器服务进程、证书/凭据过期、配置更改、安全组、账单、系统资源、上游异常。<strong>步骤：</strong>先看授权管理面板/云厂商官方状态；只读检查资源、上次变更及期限；如需运维修复，先备份再操作。<strong>禁止：</strong>把 SSH 密钥、IP、配置截图公开求助。<strong>验收：</strong>客户端实测任务完成，恢复后记录故障原因或标注“未知”。</p>
+<h2>10｜两条“备用”一起失效</h2>
+<p><strong>根因排查：</strong>是否同一 Wi-Fi、同 VPS、同服务商控制面、同份配置、同信用卡支付、同一台设备？<strong>步骤：</strong>逐层画故障域；切换真正独立下层接入；用离线工作流保住数据和交付。<strong>验收：</strong>实测至少一种备用在主方案彻底关停时仍能工作。详见 <a href="#chapter-29">28 章</a>。</p>
+<h2>每次故障都填写“最短复盘”</h2>
+<p><code>症状—开始时间—影响任务—试过的唯一变量—证据（已打码）—临时解决—根因（确认/待定）—永久修复—回归测试—责任人</code>。</p>
+<p>能复现并排除问题的记录才可以贡献为“真实案例”；未经证实的场景不能写“已解决 XX 运营商封锁”。</p>
+</section>
+<section class="chapter" id="chapter-35" data-search="34｜从零到长期稳定：30 天执行、验收与退出路线"><div class="chapter-index">35 / 36</div><h1>34｜从零到长期稳定：30 天执行、验收与退出路线</h1>
+<p><strong>核心原则：</strong>第一周建立最小可用系统，第二周分设备与业务场景验收，第三周验证主备和安全，第四周评估成本并固化操作流程。每一步都有交付物和停止条件。</p>
+<table>
+<thead>
+<tr>
+  <th>时间</th>
+  <th>动作</th>
+  <th>产出</th>
+  <th>停止条件/风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>D1</td>
+  <td>列出 3 个最重要的真实任务和禁止流量</td>
+  <td><a href="templates/业务网络分层表.md">业务网络分层表</a></td>
+  <td>账号资格/合规未确认则不进入生产</td>
+</tr>
+<tr>
+  <td>D2</td>
+  <td>在官方来源选软件/查维护情况</td>
+  <td>来源登记及版本记录</td>
+  <td>要求关闭安全功能即淘汰</td>
+</tr>
+<tr>
+  <td>D3</td>
+  <td>通过试用或获授权方式验收最小连接</td>
+  <td>低风险任务成功截图（脱敏）</td>
+  <td>看见证书异常立即停</td>
+</tr>
+<tr>
+  <td>D4</td>
+  <td>Mac/Windows 浏览器+终端逐项验收</td>
+  <td><a href="templates/开发工作流验收表.md">开发验收表</a></td>
+  <td>CLI 异常先排查，不关 TLS</td>
+</tr>
+<tr>
+  <td>D5</td>
+  <td>手机 Wi-Fi/蜂窝测试</td>
+  <td>移动设备记录</td>
+  <td>不假定热点共享同一出口</td>
+</tr>
+<tr>
+  <td>D6</td>
+  <td>添加分流、DNS、LAN 的验证</td>
+  <td><a href="templates/路由决策与验证表.md">路由验证表</a></td>
+  <td>国内支付/企业内网异常就回滚</td>
+</tr>
+<tr>
+  <td>D7</td>
+  <td>汇总 7 天测试的初步记录</td>
+  <td>SLO 试运行</td>
+  <td>不声称有限样本代表全年</td>
+</tr>
+<tr>
+  <td>D8-D10</td>
+  <td>用相同任务比较合法备选服务</td>
+  <td><a href="templates/方案取舍卡.md">方案取舍卡</a></td>
+  <td>需要假身份/越权即放弃</td>
+</tr>
+<tr>
+  <td>D11-D14</td>
+  <td>建立独立主备与热点验证</td>
+  <td><a href="templates/主备故障矩阵.md">故障矩阵</a></td>
+  <td>无法独立切换，不宣称已容灾</td>
+</tr>
+<tr>
+  <td>D15</td>
+  <td>核查设备权限、证书、Token、恢复码</td>
+  <td><a href="templates/账号与敏感任务隔离卡.md">隔离卡</a></td>
+  <td>发现密钥泄露先轮换</td>
+</tr>
+<tr>
+  <td>D16-D18</td>
+  <td>分别演练主线路和接入网络失效</td>
+  <td>两次 RTO 测量</td>
+  <td>RTO 超预算启动应急补救</td>
+</tr>
+<tr>
+  <td>D19-D21</td>
+  <td>真实任务测延迟、会议和上传</td>
+  <td>任务维度指标</td>
+  <td>出现账单异常停止测试</td>
+</tr>
+<tr>
+  <td>D22-D24</td>
+  <td>完成故障树与低风险恢复演练</td>
+  <td>SOP 和回滚卡</td>
+  <td>不对生产系统实验未知配置</td>
+</tr>
+<tr>
+  <td>D25-D27</td>
+  <td>计算 TCO、停工成本、订阅续费</td>
+  <td>成本核算表</td>
+  <td>低价值方案取消续约</td>
+</tr>
+<tr>
+  <td>D28</td>
+  <td>软件补丁与恢复流程复核</td>
+  <td>变更日志与备份</td>
+  <td>未测回滚则延期升级</td>
+</tr>
+<tr>
+  <td>D29</td>
+  <td>复盘 30 天成功率及信息缺口</td>
+  <td>网络月报</td>
+  <td>缺失数据不能冒充成功</td>
+</tr>
+<tr>
+  <td>D30</td>
+  <td>决定继续/替换/退出，归档 SOP</td>
+  <td>可移交的策略与档案</td>
+  <td>保留最低必要信息，不留敏感凭证</td>
+</tr>
+</tbody>
+</table>
+<h2>三类用户的“完成线”</h2>
+<ul>
+<li><strong>入门用户</strong>：会选择授权方案、会关闭/恢复网络、会验收两台设备，不会因为一次掉线装来路不明的软件。</li>
+<li><strong>开发者/创作者</strong>：能独立定位浏览器/CLI/容器问题，具有可用的备用及本地离线交付资料。</li>
+<li><strong>企业团队</strong>：接入方式受审批、故障由责任人响应、变更可审计、敏感数据不存在未知路径。</li>
+</ul>
+<h2>每周复盘五问</h2>
+<ol>
+<li>这周最重要的任务成功了多少次？多少次失败？有多少缺失记录？</li>
+<li>哪条故障发生频率最高？是证据，还是推断？</li>
+<li>实际演练备用几次？RTO 最差值多少？</li>
+<li>账户/设备/资料有没有暴露在不合适的网络或软件中？</li>
+<li>下周只允许改一个主要变量，应先改哪里？</li>
+</ol>
+<p>把完整记录保存本地或企业授权存储，公开投稿只提供脱敏统计数据。模板见 <a href="templates/网络月度复盘.md">网络月度复盘</a>。</p>
+</section>
+<section class="chapter" id="chapter-36" data-search="35｜反直觉事实与误区：稳定、速度、隐私、账号、合规"><div class="chapter-index">36 / 36</div><h1>35｜反直觉事实与误区：稳定、速度、隐私、账号、合规</h1>
+<p>本章为读者最容易产生错误预期的 16 个问题。<strong>事实标注以相关官方文档为边界，不声明中国大陆的当前可用率。</strong></p>
+<ol>
+<li><strong>买 VPS 就等于稳定？</strong> 不。服务器只解决部分控制权，网络上游、软件维护、DNS、协议、目标服务仍可能失败。</li>
+<li><strong>同一个 VPS 搭 3 个协议等于有 3 条备用？</strong> 不。同机故障域相同，最多提升软件/协议级多样性。</li>
+<li><strong>手机能上网，电脑开热点也能自动经同一代理？</strong> 不确定。热点客户机有独立网络行为，必须另测。</li>
+<li><strong>VPN 图标显示已连接代表所有 App 都走 VPN？</strong> 不一定。系统代理、TUN、应用自己的网络栈和 Split Tunnels 都可能影响路径。</li>
+<li><strong>DNS 设置不对会怎样？</strong> 域名无法解析、企业内网域名不可达、请求命中意料外路径。Cloudflare 明确区分路由分流与 DNS 配置：<a href="https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/configure/route-traffic/split-tunnels/">官方</a>。</li>
+<li><strong>为什么同网络浏览器成功，Git、Docker 失败？</strong> 因为每个应用/守护进程可有独立代理配置。Docker Desktop 也有不同于 Linux daemon 的设置：<a href="https://docs.docker.com/engine/daemon/proxy/">官方</a>。</li>
+<li><strong>买了“原生住宅 IP”就能通过平台国家资格？</strong> 不能推导。IP 属性不等于真实住址、合法身份、服务条款和支付/税务资格。</li>
+<li><strong>把 Mac 时间改为美国时间就“算美国设备”？</strong> 不成立。时间、网络、支付和真实身份是不同维度，虚假信息可能违反规则。</li>
+<li><strong>Tor 一定更快、更匿名？</strong> 不。Tor 有明确隐私模型和局限，其网桥主要解决可连接性，并非万能速度/匿名保证：<a href="https://support.torproject.org/tor-browser/circumvention/using-bridges/">官方</a>。</li>
+<li><strong>Cloudflare WARP 能随便选国家？</strong> 它是特定网络/隐私工具，不能按个人想象充当国家身份服务：<a href="https://developers.cloudflare.com/warp-client/warp-modes/">官方模式</a>。</li>
+<li><strong>Tailscale 连接就等于具备海外公共出口？</strong> 不。设备互联和经 exit node 转发公网流量是不同功能，后者需要明确配置并获得权限：<a href="https://tailscale.com/docs/features/exit-nodes">官方</a>。</li>
+<li><strong>eSIM 等于海外网络？</strong> 不确定。设备兼容、运营商合同、数据漫游与出口落地均需分别核验。</li>
+<li><strong>关闭证书验证可以解决不能访问吗？</strong> 危险。它可能掩盖中间人或错配，正确方法是检查证书链、时间和受信任网络设置。</li>
+<li><strong>升级到最新版永远最稳定？</strong> 不一定。正确方法是测试环境先验收、保留可回滚配置、在合适窗口升级。</li>
+<li><strong>只关注延迟就够了？</strong> 不够。完成真实任务的成功率、p95、故障恢复与账号异常更贴近业务价值。</li>
+<li><strong>这份教程能保证在中国合法且稳定使用一切海外服务？</strong> 不。适用法律、个人/企业目的、服务条款、具体网络和时段都要独立判断。教程提供选择与核验方法，不提供法律结论或现实线路性能承诺。</li>
+</ol>
+<p><strong>贯穿原则：</strong>官方文档证明产品设计，复现实测证明特定条件下的表现；匿名营销帖与一次测速都不足以证明普遍稳定。要贡献真实案例，使用 <a href="templates/来源可信度登记表.csv">来源登记</a> 并删去敏感信息。</p>
+</section><footer class="end">AI 酋长 Andy · 36 章 · 12 类模式 · 以合法授权与实测为前提 · MIT License<br>微信 <strong>AIPMAndy</strong> · <a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a><br>求职、职业发展与 AI 应用咨询可通过微信联系，咨询可选，不影响免费阅读。</footer></main></div><button id="top" class="top" type="button">回顶部 ↑</button>
+<script>
+(()=>{const input=document.getElementById('search');const chapters=[...document.querySelectorAll('.chapter')];const navs=[...document.querySelectorAll('.navlink')];const progress=document.getElementById('progress');const norm=s=>(s||'').toLocaleLowerCase();const hay=chapters.map(el=>norm(el.textContent));function filter(){const q=norm(input.value.trim());let n=0;chapters.forEach((el,i)=>{const match=!q||hay[i].includes(q);el.classList.toggle('off',!match);navs[i].classList.toggle('off',!match);n+=+match;});document.getElementById('status').textContent=q?`找到 ${n} 个章节（按标题与全文匹配）`:'';}input.addEventListener('input',filter);const sync=()=>{const total=document.documentElement.scrollHeight-innerHeight;progress.style.width=(total>0?Math.min(100,Math.max(0,scrollY/total*100)):0)+'%';let found=0;for(let i=0;i<chapters.length;i++){if(!chapters[i].classList.contains('off')&&chapters[i].getBoundingClientRect().top<=180)found=i;}navs.forEach((el,i)=>el.classList.toggle('active',i===found));};window.addEventListener('scroll',sync,{passive:true});document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});sync();})();
+</script></body></html>

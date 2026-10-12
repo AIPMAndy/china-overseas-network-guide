@@ -1,0 +1,21 @@
+name: 内容改善建议
+body:
+  - type: markdown
+    attributes:
+      value: "只建议可核验的新增内容，不收录节点和服务商推广。"
+  - type: input
+    id: topic
+    attributes:
+      label: 建议主题
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 为什么现有教程还不能让新手完成这个任务？
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 参考的官方来源（可选）
