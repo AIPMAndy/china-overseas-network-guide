@@ -1,1 +1,2 @@
-mistune>=3.0.0,<4.0.0
+# Pin the renderer so CI reproduces the committed offline site.
+mistune==3.2.0
